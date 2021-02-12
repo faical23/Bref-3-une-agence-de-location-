@@ -1,0 +1,18 @@
+h1 {
+  color: red;
+}
+
+.all-cars {
+  display: flex;
+}
+
+.all-cars .car {
+  border: 1px solid black;
+  width: 180px;
+  background-color: red;
+  height: 269px;
+}
+
+button {
+  margin-top: 50px;
+}
