@@ -18,14 +18,14 @@
                     <img src="assets/img/véhicule/moto.jpg">
                     <div class="centent-card-car">
                         <h4>Moto</h4>
-                        <button class="btn_card" onclick="show_price(10,0,'moto')">chose it</button>
+                        <a  href="#fulltype"><button class="btn_card" onclick="show_price(10,0,'moto')">chose it</button></a>
                     </div>
                 </div>
                 <div class="car">
                     <img src="assets/img/véhicule/compat.jpg">
                     <div class="centent-card-car">
                     <h4>Compat</h4>
-                    <button  class="btn_card" onclick="show_price(14,0,'compat')">chose it</button>
+                    <a  href="#fulltype"><button  class="btn_card" onclick="show_price(14,0,'compat')">chose it</button></a>
                     </div>
 
                 </div>
@@ -33,7 +33,7 @@
                     <img src="assets/img/véhicule/cetadin.jpg">
                     <div class="centent-card-car">
                     <h4>Cetadin</h4>
-                    <button  class="btn_card"  onclick="show_price(12,0,'cetadin')">chose it</button>
+                    <a  href="#fulltype"><button  class="btn_card"  onclick="show_price(12,0,'cetadin')">chose it</button></a>
                     </div>
 
                 </div>
@@ -41,7 +41,7 @@
                     <img src="assets/img/véhicule/utilitaire.jpg">
                     <div class="centent-card-car">
                     <h4>Utilitaire</h4>
-                    <button  class="btn_card" onclick="show_price(19,0,'utilitaire')">chose it</button>
+                    <a  href="#fulltype"><button  class="btn_card" onclick="show_price(19,0,'utilitaire')">chose it</button></a>
                     </div>
 
                 </div>
@@ -49,7 +49,7 @@
                     <img src="assets/img/véhicule/berlin.jpg">
                     <div class="centent-card-car">
                     <h4>Sedan/Berlin</h4>
-                    <button  class="btn_card" onclick="show_price(16,0.19,'berlin')">chose it</button>
+                    <a  href="#fulltype"><button  class="btn_card" onclick="show_price(16,0.19,'berlin')">chose it</button></a>
                     </div>
 
                 </div>
@@ -57,33 +57,45 @@
                     <img src="assets/img/véhicule/camion.jpg">
                     <div class="centent-card-car">
                     <h4>Camion</h4>
-                    <button  class="btn_card" onclick="show_price(250,0.19,'camion')">chose it</button>
+                    <a  href="#fulltype"><button  class="btn_card" onclick="show_price(250,0.19,'camion')">chose it</button></a>
                     </div>
                 </div>
                 <div class="car">
                     <img src="assets/img/véhicule/Engin.jpg">
                     <div class="centent-card-car">
                     <h4>Engin de chantier</h4>
-                    <button  class="btn_card" onclick="show_price(900,0,'engi')">chose it</button>
+                    <a  href="#fulltype"><button  class="btn_card" onclick="show_price(900,0,'engi')">chose it</button></a>
                     </div>
                 </div>
                 <div class="car">
                     <img src="assets/img/véhicule/Engin.jpg">
                     <div class="centent-card-car">
                     <h4>Engin de chantier</h4>
-                    <button  class="btn_card" onclick="show_price(900,0,'engi')">chose it</button>
+                    <a  href="#fulltype"><button  class="btn_card" onclick="show_price(900,0,'engi')">chose it</button></a>
                     </div>
                 </div>
             </div>
-            <div class="fulltype">
+            <div class="fulltype" id="fulltype">
             </div>
-            <div class="jours">
+            <div class="jours" id="jours">
             </div>
             <div class="validation_button">
             </div>
             </div>
             </div>
+            <section class="zone_popup">
+                <div class="popup">
+                    <h5>véhicule : <span> moto</span></h5>
+                    <h5>Fuel : <span> essense</span></h5>
+                    <h5>Jours : <span> 5 days</span></h5>
+                    <h5>Price : <span> 777 $</span></h5>
+                    <button class="popop_btn accept_tecket">Accepter</button>
+                    <button class="popop_btn refuse_tecket">Refuse</button>
+                </div>
+            </section>
         </section>
+
+
 
         <script src="assets/js/reserve.js"></script>
 </body>

@@ -130,6 +130,12 @@ h4 {
   font-size: 17px;
 }
 
+h5 {
+  font-family: "poping_meduim";
+  font-weight: 900;
+  font-style: normal;
+}
+
 p {
   font-family: "poping_regular";
   font-size: 20px;
@@ -263,7 +269,7 @@ h1 {
 }
 
 .validation_button .btn-valide {
-  background-color: red;
+  background-color: black;
   color: white;
   cursor: pointer;
   text-align: center;
@@ -272,10 +278,61 @@ h1 {
 }
 
 .validation_button .btn-valide:hover {
-  background-color: black;
+  background-color: white;
+  color: black;
 }
 
 .teckit_achat {
   text-align: center;
   padding-top: 30px;
+}
+
+.zone_popup {
+  position: relative;
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  border: 1px solid black;
+  background-image: linear-gradient(#ff9966, #ff5e62);
+  /* max-width: 100%; */
+  text-align: center;
+  padding: 1% 1%;
+  border-radius: 18px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* margin-bottom: 100px; */
+  left: 42%;
+  bottom: 1px;
+  /* top: -5px; */
+}
+
+.popup h5 {
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.popup span {
+  color: white;
+}
+
+.popup .popop_btn {
+  padding: 6px 20px;
+  margin-top: 15px;
+}
+
+.popup .accept_tecket {
+  background-color: crimson;
+  color: white;
+}
+
+.popup .refuse_tecket {
+  background-color: #24f724;
+  color: white;
+}
+
+.popup .accept_tecket:hover, .popup .refuse_tecket:hover {
+  background-color: black;
+  color: white;
 }

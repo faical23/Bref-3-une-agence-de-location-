@@ -6,10 +6,10 @@ let reserve_card = document.querySelector(".card-reserve"); /* div reserve card*
 let btn_card = document.querySelector(".btn_card"); /* div reserve card*/
 var chose_type_car ="<h1><span>Fuel </span>type</h1>";
 
-var all_fulltype = [' <button class="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">Elictrique<button>'
-            ,'<button class="por_fulltype"   onclick="show_fulltype(0.14,\'essense\')">essense</button>'
-            ,'<button class="por_fulltype"  onclick="show_fulltype(0.09,\'hyprede\')">hyprede<button>'
-            , '<button class="por_fulltype"   onclick="show_fulltype(0.21,\'diesel\')">diesel<button>']
+var all_fulltype = [' <a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">Elictrique<button></a>'
+            ,'<a href="#jours"><button class="por_fulltype"   onclick="show_fulltype(0.14,\'essense\')">essense</button></a>'
+            ,'<a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.09,\'hyprede\')">hyprede<button></a>'
+            , '<a href="#jours"><button class="por_fulltype"   onclick="show_fulltype(0.21,\'diesel\')">diesel<button></a>']
 
 function moto()
 {
@@ -144,3 +144,5 @@ function validation()
     price/jrs : ${get_jrs}
     montant total : ${montant_total}$`);
 }
+
+
