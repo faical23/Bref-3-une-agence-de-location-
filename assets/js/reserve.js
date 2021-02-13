@@ -2,9 +2,9 @@ let get_fulltype = document.querySelector(".fulltype"); /* div get_fulltype */
 let jours = document.querySelector(".jours"); /* div jours */
 let btn_valide = document.querySelector(".btn-valide"); /* btn validation */
 let validation_button = document.querySelector(".validation_button"); /* div validation_button */
-let teckit_achat = document.querySelector(".teckit_achat"); /* div get_fulltype */
-let reserve_card = document.querySelector(".reserve"); /* div reserve card*/
-var chose_type_car ="<h1>chose type of ur car</h1>";
+let reserve_card = document.querySelector(".card-reserve"); /* div reserve card*/
+let btn_card = document.querySelector(".btn_card"); /* div reserve card*/
+var chose_type_car ="<h1><span>Fuel </span>type</h1>";
 
 var all_fulltype = [' <button class="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">Elictrique<button>'
             ,'<button class="por_fulltype"   onclick="show_fulltype(0.14,\'essense\')">essense</button>'
@@ -75,6 +75,7 @@ var x,y,p;
 
 function show_price(price,type,fulltype)
 {
+
     x = price;
     y = type;
     p = fulltype;
@@ -116,10 +117,12 @@ function show_fulltype(porcentage,type_charge)
 {   
     get_type_charge = type_charge;
     h = porcentage;
-    reserve.innerHTML=`<div></div>`
     jours.innerHTML = ` 
-    <h1>how much days</h1>
+    <h1><span>Duration </span>time</h1>
+    <div class="chose_days">
+    <p >days :</p>
     <input type="number" class="jrs value="0">
+    </div>
     `;
     validation_button.innerHTML = ` 
     <button class="btn-valide"  onclick="validation()">valide</button>
@@ -135,13 +138,9 @@ function validation()
 {
     let get_jrs = document.querySelector(".jrs").value; /* get number jrs */
     montant_total = (x+x*y+x*h)*get_jrs;
-    //alert(montant_total);
-    teckit_achat.innerHTML = ` 
-        name : ${p}<br/>
-        type : ${get_type_charge}<br/>
-        price : ${x}<br/>
-        price/jrs : ${get_jrs}<br/>
-        montant total : ${montant_total}<br/>
-        
-    `;
+    alert(` name : ${p}
+    type : ${get_type_charge}
+    price : ${x}
+    price/jrs : ${get_jrs}
+    montant total : ${montant_total}$`);
 }

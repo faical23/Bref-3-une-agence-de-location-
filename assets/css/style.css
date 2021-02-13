@@ -12,6 +12,10 @@ body {
   padding: 0 5%;
 }
 
+span {
+  color: black;
+}
+
 article,
 aside,
 details,
@@ -105,8 +109,10 @@ input {
 }
 
 h1 {
-  font-family: "poping_Bold";
+  font-family: 'poping_Bold';
   font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 h2 {
@@ -139,10 +145,11 @@ h1 {
 
 .reserve {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .reserve .card-reserve {
-  background-color: aqua;
+  background-color: crimson;
   border-radius: 20px;
   border: 2px solid BLACK;
   padding: 3% 3%;
@@ -152,6 +159,7 @@ h1 {
   text-align: center;
   padding: 16px 0px 60px 0px;
   line-height: 50px;
+  color: white;
 }
 
 .reserve .all-cars {
@@ -166,7 +174,7 @@ h1 {
   width: 180px;
   border-radius: 20px;
   margin-bottom: 20px;
-  background-color: red;
+  background-color: seashell;
 }
 
 .reserve .all-cars .car:hover {
@@ -183,19 +191,19 @@ h1 {
 }
 
 .reserve .all-cars .car .centent-card-car h4 {
-  color: white;
+  color: black;
+  padding-top: 20px;
 }
 
 .reserve .all-cars .car .centent-card-car button {
   margin: 15px 0px 20px 0px;
   padding: 4px 20px;
-  background-color: black;
+  background-color: crimson;
   color: white;
 }
 
 .reserve .all-cars .car .centent-card-car button:hover {
-  background-color: white;
-  color: black;
+  background-color: black;
 }
 
 .fulltype {
@@ -229,15 +237,25 @@ h1 {
   padding-bottom: 40px;
 }
 
-.jours input {
+.jours .chose_days {
+  display: flex;
+  justify-content: center;
+}
+
+.jours .chose_days input {
   width: 65px;
   height: 32px;
-  background-color: crimson;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   border: 2px solid black;
+}
+
+.jours .chose_days p {
+  padding-right: 6px;
+  font-weight: bold;
 }
 
 .validation_button {
