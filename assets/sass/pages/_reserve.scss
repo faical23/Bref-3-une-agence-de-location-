@@ -13,3 +13,11 @@ button{
 .fulltype{
     padding-top: 50px;
 }
+.btn-valide{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.btn-valide:hover{
+    background-color: black;
+}
