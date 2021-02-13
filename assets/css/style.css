@@ -1,16 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.pr-pl {
+  padding: 0 5%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active, a:hover, a:focus {
+  outline: none;
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
+
+button:focus, button:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+@font-face {
+  font-family: "poping_light";
+  src: url(../font/poping/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "poping_Bold";
+  src: url(../font/poping/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "poping_semibold";
+  src: url(../font/poping/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "poping_regular";
+  src: url(../font/poping/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "poping_meduim";
+  src: url(../font/poping/Poppins-Medium.ttf);
+}
+
+h1 {
+  font-family: "poping_Bold";
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "poping_semibold";
+  font-size: 50px;
+}
+
+h3 {
+  font-family: "poping_meduim";
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "poping_meduim";
+  font-size: 17px;
+}
+
+p {
+  font-family: "poping_regular";
+  font-size: 20px;
+}
+
+a, button {
+  font-family: "poping_light";
+}
+
 h1 {
   color: red;
 }
 
-.all-cars {
-  display: flex;
+.reserve {
+  padding-top: 50px;
 }
 
-.all-cars .car {
-  border: 1px solid black;
+.reserve .card-reserve {
+  background-color: aqua;
+  border-radius: 20px;
+  border: 2px solid BLACK;
+  padding: 3% 3%;
+}
+
+.reserve h1 {
+  text-align: center;
+  padding: 16px 0px 60px 0px;
+  line-height: 50px;
+}
+
+.reserve .all-cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* should learn this funtion */
+  justify-items: center;
+}
+
+.reserve .all-cars .car {
+  text-align: center;
   width: 180px;
+  border-radius: 20px;
+  margin-bottom: 20px;
   background-color: red;
-  height: 269px;
+}
+
+.reserve .all-cars .car:hover {
+  box-shadow: 0px 13px 29px 5px black;
+}
+
+.reserve .all-cars .car img {
+  border-radius: 20px;
+  object-fit: cover;
+  max-width: 101%;
+  position: relative;
+  left: -1px;
+  bottom: 1px;
+}
+
+.reserve .all-cars .car .centent-card-car h4 {
+  color: white;
+}
+
+.reserve .all-cars .car .centent-card-car button {
+  margin: 15px 0px 20px 0px;
+  padding: 4px 20px;
+  background-color: black;
+  color: white;
+}
+
+.reserve .all-cars .car .centent-card-car button:hover {
+  background-color: white;
+  color: black;
 }
 
 button {
