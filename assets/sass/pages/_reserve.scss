@@ -56,19 +56,59 @@
 }
 
 
-
-
-button{
-    margin-top: 50px;
-}
 .fulltype{
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    h1{
+        padding-bottom: 40px;
+    }
+    .por_fulltype{
+        padding: 7px 30px;
+        background-color: black;
+        color: white;
+        margin: 0px 20px 0px 20px;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
 }
-.btn-valide{
-    background-color: red;
-    color: white;
-    cursor: pointer;
+
+.jours{
+    text-align: center;
+    padding-bottom: 40px;
+    h1{
+        padding-bottom: 40px;
+    }
+    input{
+        width: 65px;
+        height: 32px;
+        background-color: crimson;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid black;
+    }
 }
-.btn-valide:hover{
-    background-color: black;
+
+.validation_button{
+    text-align: center;
+    .btn-valide {
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        padding: 8px 45px;
+        font-size: 27px;
+        &:hover{
+            background-color: black;
+        }
+    }
+}
+
+.teckit_achat{
+    text-align: center;
+    padding-top: 30px;
 }

@@ -1,17 +1,20 @@
 let get_fulltype = document.querySelector(".fulltype"); /* div get_fulltype */
 let jours = document.querySelector(".jours"); /* div jours */
 let btn_valide = document.querySelector(".btn-valide"); /* btn validation */
+let validation_button = document.querySelector(".validation_button"); /* div validation_button */
 let teckit_achat = document.querySelector(".teckit_achat"); /* div get_fulltype */
+let reserve_card = document.querySelector(".reserve"); /* div reserve card*/
+var chose_type_car ="<h1>chose type of ur car</h1>";
 
-
-var all_fulltype = [' <button id="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">Elictrique<button>'
-            ,'<button id="por_fulltype"   onclick="show_fulltype(0.14,\'essense\')">essense</button>'
-            ,'<button id="por_fulltype"  onclick="show_fulltype(0.09,\'hyprede\')">hyprede<button>'
-            , '<button id="por_fulltype"   onclick="show_fulltype(0.21,\'diesel\')">diesel<button>']
+var all_fulltype = [' <button class="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">Elictrique<button>'
+            ,'<button class="por_fulltype"   onclick="show_fulltype(0.14,\'essense\')">essense</button>'
+            ,'<button class="por_fulltype"  onclick="show_fulltype(0.09,\'hyprede\')">hyprede<button>'
+            , '<button class="por_fulltype"   onclick="show_fulltype(0.21,\'diesel\')">diesel<button>']
 
 function moto()
 {
     get_fulltype.innerHTML = ` 
+    ${chose_type_car}
     ${all_fulltype[0]}
     ${all_fulltype[1]}
     `;
@@ -19,6 +22,7 @@ function moto()
 function compat()
 {
     get_fulltype.innerHTML = ` 
+    ${chose_type_car}
     ${all_fulltype[1]}
     ${all_fulltype[2]}
     ${all_fulltype[3]}
@@ -27,6 +31,7 @@ function compat()
 function Berlin()
 {
     get_fulltype.innerHTML = ` 
+    ${chose_type_car}
     ${all_fulltype[1]}
     ${all_fulltype[2]}
     ${all_fulltype[3]}
@@ -36,6 +41,7 @@ function Cetadin()
 {
     
     get_fulltype.innerHTML = ` 
+    ${chose_type_car}
     ${all_fulltype[0]}
     ${all_fulltype[1]}
     ${all_fulltype[2]}
@@ -45,18 +51,21 @@ function Cetadin()
 function Utilitaire()
 {
     get_fulltype.innerHTML = ` 
+    ${chose_type_car}
     ${all_fulltype[3]}
     `;
 }
 function Camion()
 {
     get_fulltype.innerHTML = ` 
+    ${chose_type_car}
     ${all_fulltype[3]}
     `;
 }
 function Engin()
 {
     get_fulltype.innerHTML = ` 
+    ${chose_type_car}
     ${all_fulltype[1]}
     ${all_fulltype[3]}
     `;
@@ -107,9 +116,13 @@ function show_fulltype(porcentage,type_charge)
 {   
     get_type_charge = type_charge;
     h = porcentage;
+    reserve.innerHTML=`<div></div>`
     jours.innerHTML = ` 
     <h1>how much days</h1>
-    <input type="number" class="jrs">
+    <input type="number" class="jrs value="0">
+    `;
+    validation_button.innerHTML = ` 
+    <button class="btn-valide"  onclick="validation()">valide</button>
     `;
     console.log(porcentage);
     var pp = x+x*y+x*porcentage;

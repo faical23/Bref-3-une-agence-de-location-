@@ -198,20 +198,66 @@ h1 {
   color: black;
 }
 
-button {
-  margin-top: 50px;
-}
-
 .fulltype {
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
-.btn-valide {
+.fulltype h1 {
+  padding-bottom: 40px;
+}
+
+.fulltype .por_fulltype {
+  padding: 7px 30px;
+  background-color: black;
+  color: white;
+  margin: 0px 20px 0px 20px;
+}
+
+.fulltype .por_fulltype:hover {
+  background-color: white;
+  color: black;
+}
+
+.jours {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.jours h1 {
+  padding-bottom: 40px;
+}
+
+.jours input {
+  width: 65px;
+  height: 32px;
+  background-color: crimson;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.validation_button {
+  text-align: center;
+}
+
+.validation_button .btn-valide {
   background-color: red;
   color: white;
   cursor: pointer;
+  text-align: center;
+  padding: 8px 45px;
+  font-size: 27px;
 }
 
-.btn-valide:hover {
+.validation_button .btn-valide:hover {
   background-color: black;
+}
+
+.teckit_achat {
+  text-align: center;
+  padding-top: 30px;
 }
