@@ -125,24 +125,23 @@
     padding-top: 30px;
 }
 
-.zone_popup{
+#zone_popup_off{
     position: relative;
     display: none;
 }
-.popup{
+#zone_popup_on{
+    position: relative;
+    display: flex;
+}
+.popup_card{
     position: absolute;
     border: 1px solid black;
-    background-image: linear-gradient(#ff9966, #ff5e62);
-    /* max-width: 100%; */
+    background-color: rgb(0, 255, 64);
     text-align: center;
     padding: 1% 1%;
     border-radius: 18px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* margin-bottom: 100px; */
     left: 42%;
-    bottom: 1px;
-    /* top: -5px; */
+    bottom: 30px;
     h5{
         padding-top: 5px;
         font-size: 20px;

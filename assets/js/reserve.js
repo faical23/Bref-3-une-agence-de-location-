@@ -4,6 +4,8 @@ let btn_valide = document.querySelector(".btn-valide"); /* btn validation */
 let validation_button = document.querySelector(".validation_button"); /* div validation_button */
 let reserve_card = document.querySelector(".card-reserve"); /* div reserve card*/
 let btn_card = document.querySelector(".btn_card"); /* div reserve card*/
+let zone_popup = document.querySelector("#zone_popup_off"); /* div reserve card*/
+
 var chose_type_car ="<h1><span>Fuel </span>type</h1>";
 
 var all_fulltype = [' <a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">Elictrique<button></a>'
@@ -121,7 +123,7 @@ function show_fulltype(porcentage,type_charge)
     <h1><span>Duration </span>time</h1>
     <div class="chose_days">
     <p >days :</p>
-    <input type="number" class="jrs value="0">
+    <input type="number" class="jrs"  min="1" max="30">
     </div>
     `;
     validation_button.innerHTML = ` 
@@ -132,17 +134,28 @@ function show_fulltype(porcentage,type_charge)
     console.log(pp);
 }
 
-
+let popup_card = document.querySelector(".popup_card");
 
 function validation()
 {
     let get_jrs = document.querySelector(".jrs").value; /* get number jrs */
     montant_total = (x+x*y+x*h)*get_jrs;
-    alert(` name : ${p}
-    type : ${get_type_charge}
-    price : ${x}
-    price/jrs : ${get_jrs}
-    montant total : ${montant_total}$`);
+    // alert(` name : ${p}
+    // type : ${get_type_charge}
+    // price : ${x}
+    // price/jrs : ${get_jrs}
+    // montant total : ${montant_total}$`);
+
+    zone_popup.id="zone_popup_on";
+    popup_card.innerHTML =
+        `   
+        <h5>véhicule : <span> ${p}</span></h5>
+        <h5>Fuel : <span>${get_type_charge}</span></h5>
+        <h5>Jours : <span> ${get_jrs} days</span></h5>
+        <h5>Price : <span> ${montant_total} $</span></h5>
+        <button class="popop_btn accept_tecket">Accepter</button>
+        <button class="popop_btn refuse_tecket">Refuse</button>
+    `
 }
 
 

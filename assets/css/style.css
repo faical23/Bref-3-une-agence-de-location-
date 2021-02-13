@@ -287,52 +287,52 @@ h1 {
   padding-top: 30px;
 }
 
-.zone_popup {
+#zone_popup_off {
   position: relative;
   display: none;
 }
 
-.popup {
+#zone_popup_on {
+  position: relative;
+  display: flex;
+}
+
+.popup_card {
   position: absolute;
   border: 1px solid black;
-  background-image: linear-gradient(#ff9966, #ff5e62);
-  /* max-width: 100%; */
+  background-color: #00ff40;
   text-align: center;
   padding: 1% 1%;
   border-radius: 18px;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* margin-bottom: 100px; */
   left: 42%;
-  bottom: 1px;
-  /* top: -5px; */
+  bottom: 30px;
 }
 
-.popup h5 {
+.popup_card h5 {
   padding-top: 5px;
   font-size: 20px;
 }
 
-.popup span {
+.popup_card span {
   color: white;
 }
 
-.popup .popop_btn {
+.popup_card .popop_btn {
   padding: 6px 20px;
   margin-top: 15px;
 }
 
-.popup .accept_tecket {
+.popup_card .accept_tecket {
   background-color: crimson;
   color: white;
 }
 
-.popup .refuse_tecket {
+.popup_card .refuse_tecket {
   background-color: #24f724;
   color: white;
 }
 
-.popup .accept_tecket:hover, .popup .refuse_tecket:hover {
+.popup_card .accept_tecket:hover, .popup_card .refuse_tecket:hover {
   background-color: black;
   color: white;
 }
