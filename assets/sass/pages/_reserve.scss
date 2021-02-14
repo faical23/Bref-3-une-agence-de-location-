@@ -1,8 +1,76 @@
+.hero-reserve{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background/backreserve.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:180px;
+    padding-bottom: 50px;
+    h1{
+        color: white;
+        max-width: 80%;
+        font-size: 45px;
+    }
+    button{
+        padding: 8px 18px;
+        border-radius: 20px;
+        color: white;
+        background-color: $primary_color_1;
+        margin-top: 25px;
+        &:hover{
+            background-color: white;
+            color: $primary_color_1;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        h1 {
+            color: white;
+            max-width: 100%;
+            font-size: 45px;
+        }
+      }
+      @media screen and (max-width: 560px) {
+          padding-top: 90px;
+        h1 {
+            font-size: 22px;
+        }
+      }
+}
+.data-client{
+    h2{
+        color: black;
+        padding-bottom: 20px ;
+    }
+    .part-information{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    @media screen and (max-width: 560px) {
+        .part-information{
+            display: block;
+            padding-bottom: 20PX;
+        }
+    }
+}
+
 .reserve{
     padding-top: 50px;
     padding-bottom: 50px;
+    button {
+        margin: 15px 0px 20px 0px;
+        padding: 4px 20px;
+        background-color: $primary_color_1;
+        color: white;
+    &:hover{
+        background-color: black;
+    }
+    }
     .card-reserve {
-        background-color: crimson;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/background/back-reserve2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         border-radius: 20px;
         border: 2px solid BLACK;
         padding: 3% 3%;
@@ -19,14 +87,15 @@
         grid-template-columns: repeat(auto-fit ,minmax(280px,1fr));  /* should learn this funtion */
         justify-items: center;
         .car {
-            text-align: center;
-            width: 180px;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            background-color: seashell;
+                text-align: center;
+                width: 247px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+                background-color: seashell;
+                HEIGHT: 294px;
 
             &:hover{
-                box-shadow: 0px 13px 29px 5px black;
+                box-shadow: 0px 13px 29px 5px white;
             }
             img{
                 border-radius:20px ;
@@ -45,7 +114,7 @@
                 button {
                     margin: 15px 0px 20px 0px;
                     padding: 4px 20px;
-                    background-color: crimson;
+                    background-color: $primary_color_1;
                     color: white;
                 &:hover{
                     background-color: black;
@@ -56,25 +125,49 @@
     }
 
 }
-
-
-.fulltype{
-    padding-top: 40px;
-    padding-bottom: 30px;
+.zone_type_fuil{
+    display: flex;
+    justify-content: space-evenly;
+.type_fuel{
+    border: 1px solid black;
+    width: 13%;
+    border-radius: 18px;
+    height: 240px;
     text-align: center;
-    h1{
-        padding-bottom: 40px;
+    background-color: seashell;
+
+    img{
+        border-radius: 20px;
+        position: relative;
+        border: 4px solid black;
     }
-    .por_fulltype{
-        padding: 7px 30px;
-        background-color: black;
-        color: white;
-        margin: 0px 20px 0px 20px;
-        &:hover{
-            background-color: white;
-            color: black;
-        }
+    &:hover{
+        box-shadow: 0px 13px 29px 5px white;
     }
+}
+@media screen and (max-width: 1024px) {
+    .type_fuel {
+        height: 280px;
+        width: 24%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .type_fuel {
+        height: 230px;
+        width: 24%;
+    }
+  }
+@media screen and (max-width: 560px) {
+    display: block;
+    text-align: -webkit-center;
+    .type_fuel {
+        width: 55%;
+        margin-bottom: 20px;
+
+    }
+  }
+  
 }
 
 .jours{
@@ -95,10 +188,12 @@
             font-weight: bold;
             text-align: center;
             border: 2px solid black;
+            border-radius: 0px;
         }
         p{
             padding-right: 6px;
             font-weight: bold;
+            color: white;
         }
     }
 
@@ -107,7 +202,7 @@
 .validation_button{
     text-align: center;
     .btn-valide {
-        background-color: black;
+        background-color: $primary_color_1;
         color: white;
         cursor: pointer;
         text-align: center;
@@ -120,10 +215,10 @@
     }
 }
 
-.teckit_achat{
-    text-align: center;
-    padding-top: 30px;
-}
+// .teckit_achat{
+//     text-align: center;
+//     padding-top: 30px;
+// }
 
 #zone_popup_off{
     position: relative;
@@ -134,13 +229,13 @@
     display: flex;
 }
 .popup_card{
-    position: absolute;
+    position: fixed;
     border: 1px solid black;
-    background-color: rgb(0, 255, 64);
+    background-color: $primary_color_1;
     text-align: center;
     padding: 1% 1%;
     border-radius: 18px;
-    left: 42%;
+    left: 36%;
     bottom: 30px;
     h5{
         padding-top: 5px;
@@ -154,15 +249,30 @@
         margin-top: 15px;
     }
     .accept_tecket{
-        background-color: crimson;
-        color: white;
+        background-color: white;
+        color: black;
     }
-    .refuse_tecket{
-        background-color: rgb(36, 247, 36);
-        color: white;
-    }
-    .accept_tecket:hover , .refuse_tecket:hover{
+    .accept_tecket:hover{
         background-color: rgb(0, 0, 0);
         color: white;
     }
+    .gift-img{
+        margin-right: 96px;
+    }
+    .gift-img-sorry{
+        margin-right: 0px;
+    }
+    @media screen and (max-width: 1280px) {
+        left: 30%;
+    }
+    @media screen and (max-width: 1024px) {
+        left: 26%;
+    }
+    @media screen and (max-width: 768px) {
+        left: 16%;
+    }
+    @media screen and (max-width: 560px) {
+        left: 0%;
+    }
 }
+

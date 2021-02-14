@@ -1,0 +1,18 @@
+input{
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 100%;
+    height: 33px;
+}
+::placeholder{
+    padding-left: 20px;
+    font-family: "poping_meduim";
+    color: rgb(151, 150, 150);
+}
+label{
+    font-family: "poping_meduim";
+    font-size: 20px;
+    color: black;
+    font-style: normal;
+    font-weight: 800;
+}

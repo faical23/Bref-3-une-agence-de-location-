@@ -12,7 +12,7 @@ body{
     padding: 0 5% ;
 }
 span{
-	color: black;
+	color: crimson;
 }
 
 article,
@@ -74,6 +74,7 @@ li {
 img {
 	max-width: 100%;
 	border: none; 
+	object-fit: cover;
 }
 
 button,

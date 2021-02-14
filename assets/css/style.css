@@ -13,7 +13,7 @@ body {
 }
 
 span {
-  color: black;
+  color: crimson;
 }
 
 article,
@@ -76,6 +76,7 @@ li {
 img {
   max-width: 100%;
   border: none;
+  object-fit: cover;
 }
 
 button,
@@ -116,8 +117,11 @@ h1 {
 }
 
 h2 {
-  font-family: "poping_semibold";
-  font-size: 50px;
+  font-family: 'poping_Bold';
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 h3 {
@@ -145,8 +149,92 @@ a, button {
   font-family: "poping_light";
 }
 
+input {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100%;
+  height: 33px;
+}
+
+::placeholder {
+  padding-left: 20px;
+  font-family: "poping_meduim";
+  color: #979696;
+}
+
+label {
+  font-family: "poping_meduim";
+  font-size: 20px;
+  color: black;
+  font-style: normal;
+  font-weight: 800;
+}
+
 h1 {
   color: red;
+}
+
+.hero-reserve {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background/backreserve.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+.hero-reserve h1 {
+  color: white;
+  max-width: 80%;
+  font-size: 45px;
+}
+
+.hero-reserve button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: white;
+  background-color: crimson;
+  margin-top: 25px;
+}
+
+.hero-reserve button:hover {
+  background-color: white;
+  color: crimson;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-reserve h1 {
+    color: white;
+    max-width: 100%;
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hero-reserve {
+    padding-top: 90px;
+  }
+  .hero-reserve h1 {
+    font-size: 22px;
+  }
+}
+
+.data-client h2 {
+  color: black;
+  padding-bottom: 20px;
+}
+
+.data-client .part-information {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+@media screen and (max-width: 560px) {
+  .data-client .part-information {
+    display: block;
+    padding-bottom: 20PX;
+  }
 }
 
 .reserve {
@@ -154,8 +242,23 @@ h1 {
   padding-bottom: 50px;
 }
 
-.reserve .card-reserve {
+.reserve button {
+  margin: 15px 0px 20px 0px;
+  padding: 4px 20px;
   background-color: crimson;
+  color: white;
+}
+
+.reserve button:hover {
+  background-color: black;
+}
+
+.reserve .card-reserve {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/background/back-reserve2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   border-radius: 20px;
   border: 2px solid BLACK;
   padding: 3% 3%;
@@ -177,14 +280,15 @@ h1 {
 
 .reserve .all-cars .car {
   text-align: center;
-  width: 180px;
+  width: 247px;
   border-radius: 20px;
   margin-bottom: 20px;
   background-color: seashell;
+  HEIGHT: 294px;
 }
 
 .reserve .all-cars .car:hover {
-  box-shadow: 0px 13px 29px 5px black;
+  box-shadow: 0px 13px 29px 5px white;
 }
 
 .reserve .all-cars .car img {
@@ -212,26 +316,53 @@ h1 {
   background-color: black;
 }
 
-.fulltype {
-  padding-top: 40px;
-  padding-bottom: 30px;
+.zone_type_fuil {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.zone_type_fuil .type_fuel {
+  border: 1px solid black;
+  width: 13%;
+  border-radius: 18px;
+  height: 240px;
   text-align: center;
+  background-color: seashell;
 }
 
-.fulltype h1 {
-  padding-bottom: 40px;
+.zone_type_fuil .type_fuel img {
+  border-radius: 20px;
+  position: relative;
+  border: 4px solid black;
 }
 
-.fulltype .por_fulltype {
-  padding: 7px 30px;
-  background-color: black;
-  color: white;
-  margin: 0px 20px 0px 20px;
+.zone_type_fuil .type_fuel:hover {
+  box-shadow: 0px 13px 29px 5px white;
 }
 
-.fulltype .por_fulltype:hover {
-  background-color: white;
-  color: black;
+@media screen and (max-width: 1024px) {
+  .zone_type_fuil .type_fuel {
+    height: 280px;
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .zone_type_fuil .type_fuel {
+    height: 230px;
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .zone_type_fuil {
+    display: block;
+    text-align: -webkit-center;
+  }
+  .zone_type_fuil .type_fuel {
+    width: 55%;
+    margin-bottom: 20px;
+  }
 }
 
 .jours {
@@ -257,11 +388,13 @@ h1 {
   font-weight: bold;
   text-align: center;
   border: 2px solid black;
+  border-radius: 0px;
 }
 
 .jours .chose_days p {
   padding-right: 6px;
   font-weight: bold;
+  color: white;
 }
 
 .validation_button {
@@ -269,7 +402,7 @@ h1 {
 }
 
 .validation_button .btn-valide {
-  background-color: black;
+  background-color: crimson;
   color: white;
   cursor: pointer;
   text-align: center;
@@ -280,11 +413,6 @@ h1 {
 .validation_button .btn-valide:hover {
   background-color: white;
   color: black;
-}
-
-.teckit_achat {
-  text-align: center;
-  padding-top: 30px;
 }
 
 #zone_popup_off {
@@ -298,13 +426,13 @@ h1 {
 }
 
 .popup_card {
-  position: absolute;
+  position: fixed;
   border: 1px solid black;
-  background-color: #00ff40;
+  background-color: crimson;
   text-align: center;
   padding: 1% 1%;
   border-radius: 18px;
-  left: 42%;
+  left: 36%;
   bottom: 30px;
 }
 
@@ -323,16 +451,43 @@ h1 {
 }
 
 .popup_card .accept_tecket {
-  background-color: crimson;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
-.popup_card .refuse_tecket {
-  background-color: #24f724;
-  color: white;
-}
-
-.popup_card .accept_tecket:hover, .popup_card .refuse_tecket:hover {
+.popup_card .accept_tecket:hover {
   background-color: black;
   color: white;
+}
+
+.popup_card .gift-img {
+  margin-right: 96px;
+}
+
+.popup_card .gift-img-sorry {
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+  .popup_card {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .popup_card {
+    left: 26%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup_card {
+    left: 16%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .popup_card {
+    left: 0%;
+  }
 }

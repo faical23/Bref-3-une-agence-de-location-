@@ -5,26 +5,68 @@ let validation_button = document.querySelector(".validation_button"); /* div val
 let reserve_card = document.querySelector(".card-reserve"); /* div reserve card*/
 let btn_card = document.querySelector(".btn_card"); /* div reserve card*/
 let zone_popup = document.querySelector("#zone_popup_off"); /* div reserve card*/
+let zone_type_fuil = document.querySelector(".zone_type_fuil"); /* div zone all fuil  */
+let fulltype = document.querySelector(".fulltype"); /* div fulltype  */
+let validation_email = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-var chose_type_car ="<h1><span>Fuel </span>type</h1>";
 
-var all_fulltype = [' <a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">Elictrique<button></a>'
-            ,'<a href="#jours"><button class="por_fulltype"   onclick="show_fulltype(0.14,\'essense\')">essense</button></a>'
-            ,'<a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.09,\'hyprede\')">hyprede<button></a>'
-            , '<a href="#jours"><button class="por_fulltype"   onclick="show_fulltype(0.21,\'diesel\')">diesel<button></a>']
+
+var chose_type_car ="<h2><span>Fuel </span>type</h2>";
+
+
+var Eliqtrque = `
+    <div class="type_fuel">
+    <img src="assets/img/fiul_img/diesel.jpg">
+    <div class="centent-fiul-car">
+    <h4>Eliqctrique</h4>
+    <a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.05,\'Elictrique\')">chose it</button></a>
+
+    </div>
+    </div>
+`;
+var Hyprede = `
+    <div class="type_fuel">
+    <img src="assets/img/fiul_img/essence.jpg">
+    <div class="centent-fiul-car">
+    <h4>Hyprede</h4>
+    <a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.09,\'hyprede\')">chose it</button></a>
+
+    </div>
+    </div>
+`;
+var Essence = `
+    <div class="type_fuel">
+    <img src="assets/img/fiul_img/hybred.jpg">
+    <div class="centent-fiul-car">
+    <h4>Essense</h4>
+    <a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.14,\'essense\')">chose it</button></a>
+    </div>
+    </div>
+`;
+var Disiel= `
+    <div class="type_fuel">
+    <img src="assets/img/fiul_img/voiture-electrique.jpg">
+    <div class="centent-fiul-car">
+    <h4>Disiel</h4>
+    <a href="#jours"><button class="por_fulltype"  onclick="show_fulltype(0.21,\'diesel\')">chose it</button></a>
+    </div>
+    </div>
+`;
+
+var all_fulltype = [Eliqtrque,Essence,Hyprede,Disiel];
 
 function moto()
 {
-    get_fulltype.innerHTML = ` 
-    ${chose_type_car}
+    fulltype.innerHTML = chose_type_car;
+    zone_type_fuil.innerHTML= ` 
     ${all_fulltype[0]}
     ${all_fulltype[1]}
     `;
 }
 function compat()
 {
-    get_fulltype.innerHTML = ` 
-    ${chose_type_car}
+    fulltype.innerHTML = chose_type_car;
+    zone_type_fuil.innerHTML = ` 
     ${all_fulltype[1]}
     ${all_fulltype[2]}
     ${all_fulltype[3]}
@@ -32,8 +74,8 @@ function compat()
 }
 function Berlin()
 {
-    get_fulltype.innerHTML = ` 
-    ${chose_type_car}
+    fulltype.innerHTML = chose_type_car;
+    zone_type_fuil.innerHTML = ` 
     ${all_fulltype[1]}
     ${all_fulltype[2]}
     ${all_fulltype[3]}
@@ -41,9 +83,8 @@ function Berlin()
 }
 function Cetadin()
 {
-    
-    get_fulltype.innerHTML = ` 
-    ${chose_type_car}
+    fulltype.innerHTML = chose_type_car;  
+    zone_type_fuil.innerHTML = ` 
     ${all_fulltype[0]}
     ${all_fulltype[1]}
     ${all_fulltype[2]}
@@ -52,22 +93,22 @@ function Cetadin()
 }
 function Utilitaire()
 {
-    get_fulltype.innerHTML = ` 
-    ${chose_type_car}
+    fulltype.innerHTML = chose_type_car;
+    zone_type_fuil.innerHTML = ` 
     ${all_fulltype[3]}
     `;
 }
 function Camion()
 {
-    get_fulltype.innerHTML = ` 
-    ${chose_type_car}
+    fulltype.innerHTML = chose_type_car;
+    zone_type_fuil.innerHTML = ` 
     ${all_fulltype[3]}
     `;
 }
 function Engin()
 {
-    get_fulltype.innerHTML = ` 
-    ${chose_type_car}
+    fulltype.innerHTML = chose_type_car;
+    zone_type_fuil.innerHTML = ` 
     ${all_fulltype[1]}
     ${all_fulltype[3]}
     `;
@@ -120,10 +161,10 @@ function show_fulltype(porcentage,type_charge)
     get_type_charge = type_charge;
     h = porcentage;
     jours.innerHTML = ` 
-    <h1><span>Duration </span>time</h1>
+    <h2><span>Duration </span>time</h2>
     <div class="chose_days">
     <p >days :</p>
-    <input type="number" class="jrs"  min="1" max="30">
+    <input type="number" class="jrs"  min="1" max="9000">
     </div>
     `;
     validation_button.innerHTML = ` 
@@ -136,8 +177,17 @@ function show_fulltype(porcentage,type_charge)
 
 let popup_card = document.querySelector(".popup_card");
 
+function accept_card()
+{
+    zone_popup.id="zone_popup_off";
+}
+
+
 function validation()
 {
+    let reserve_name = document.querySelector("#reserve-name").value; /* get reserve-name from html  */
+    let reserve_email = document.querySelector("#reserve-email").value; /* get reserve-name from html  */
+    let reserve_cin = document.querySelector("#reserve-cin").value; /* get reserve-name from html  */
     let get_jrs = document.querySelector(".jrs").value; /* get number jrs */
     montant_total = (x+x*y+x*h)*get_jrs;
     // alert(` name : ${p}
@@ -145,17 +195,31 @@ function validation()
     // price : ${x}
     // price/jrs : ${get_jrs}
     // montant total : ${montant_total}$`);
-
     zone_popup.id="zone_popup_on";
-    popup_card.innerHTML =
-        `   
-        <h5>véhicule : <span> ${p}</span></h5>
-        <h5>Fuel : <span>${get_type_charge}</span></h5>
-        <h5>Jours : <span> ${get_jrs} days</span></h5>
-        <h5>Price : <span> ${montant_total} $</span></h5>
-        <button class="popop_btn accept_tecket">Accepter</button>
-        <button class="popop_btn refuse_tecket">Refuse</button>
+    if(reserve_name == "" || reserve_email=="" || reserve_cin=="" || !(reserve_email.match(validation_email)))
+    {
+        popup_card.innerHTML =
+        `
+        <h5>Sorry u forgot some information</h5>
+        <img class="gift-img gift-img-sorry" src="assets/img/gift/sorrygift2.gif">
+        <br/>
+        <a href=""><button class="popop_btn accept_tecket"  onclick="accept_card()">Reapet</button></a>
     `
+    }
+    else{
+        popup_card.innerHTML =
+                `
+                <h5>Name : <span> ${reserve_name}</span></h5>
+                <h5>Email : <span> ${reserve_email}</span></h5>
+                <h5>Cin: <span> ${reserve_cin}</span></h5>
+                <h5>véhicule : <span> ${p}</span></h5>
+                <h5>Fuel : <span>${get_type_charge}</span></h5>
+                <h5>Jours : <span> ${get_jrs} days</span></h5>
+                <h5>Price : <span> ${montant_total} $</span></h5>
+                <img class="gift-img" src="assets/img/gift/gift3.gif">
+                <br/>
+                <a href=""><button class="popop_btn accept_tecket"  onclick="accept_card()">Opretaion Done</button></a>
+            `
+        }
+
 }
-
-
