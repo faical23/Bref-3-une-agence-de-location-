@@ -200,7 +200,7 @@ function validation()
     {
         popup_card.innerHTML =
         `
-        <h5>Sorry u forgot some information</h5>
+        <p>Sorry u forgot some information</p>
         <img class="gift-img gift-img-sorry" src="assets/img/gift/sorrygift2.gif">
         <br/>
         <a href=""><button class="popop_btn accept_tecket"  onclick="accept_card()">Reapet</button></a>
@@ -209,13 +209,13 @@ function validation()
     else{
         popup_card.innerHTML =
                 `
-                <h5>Name : <span> ${reserve_name}</span></h5>
-                <h5>Email : <span> ${reserve_email}</span></h5>
-                <h5>Cin: <span> ${reserve_cin}</span></h5>
-                <h5>véhicule : <span> ${p}</span></h5>
-                <h5>Fuel : <span>${get_type_charge}</span></h5>
-                <h5>Jours : <span> ${get_jrs} days</span></h5>
-                <h5>Price : <span> ${montant_total} $</span></h5>
+                <p>Name : <span> ${reserve_name}</span></p>
+                <p>Email : <span> ${reserve_email}</span></p>
+                <p>Cin: <span> ${reserve_cin}</span></p>
+                <p>véhicule : <span> ${p}</span></p>
+                <p>Fuel : <span>${get_type_charge}</span></p>
+                <p>Jours : <span> ${get_jrs} days</span></p>
+                <p>Price : <span> ${montant_total} $</span></p>
                 <img class="gift-img" src="assets/img/gift/gift3.gif">
                 <br/>
                 <a href=""><button class="popop_btn accept_tecket"  onclick="accept_card()">Opretaion Done</button></a>
