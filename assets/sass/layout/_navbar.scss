@@ -14,7 +14,7 @@ header{
     position: fixed;
     width:100%;
     background-color: rgba(0,0,0,0.5);
-    padding:22px;
+    padding:10px;
     z-index: 100;
 
     .navbar{
@@ -28,6 +28,7 @@ header{
         }
         ul{
             display: flex;
+            padding-top: 13px;
             li{
                 padding-left: 30px;
                 padding-left: 30px;
@@ -56,12 +57,12 @@ header{
         }
     }
 
-    @media screen and (max-width: 560px) {
+    @media screen and (max-width: 768px) {
         .burger-menu-zone{
             display: flex;
             .burger-menu{
                 left: 80%;
-                bottom: 3px;
+                bottom: 19px;
             }
         }
             .navbar{
@@ -118,7 +119,7 @@ header{
              cursor: pointer;
              text-align: -webkit-right;
              position: relative;
-             right: 43px;
+             right: 90px;
              bottom: -29px;
              .lin-burger{
                 padding: 5px 0px;
@@ -135,4 +136,8 @@ header{
                 bottom: 15px;
              }
          }
+    }
+
+    .zone-logo{
+        max-width: 100Px;
     }

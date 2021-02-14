@@ -1,12 +1,91 @@
 footer{
     padding-top: 80px;
-    background-color: red;
+    background-color: rgb(100, 220, 250);
+    p{
+        color: white;
+        text-align: start;
+        font-family: "poping_regular";
+    }
     .footer-element
     {
         display: flex;
         justify-content: space-between;
+        text-align: center;
+        padding-bottom: 50px;
+        h3{
+            padding-bottom: 10px;
+            color: white;
+        }
+        
+        a,li{
+            color: white;
+            margin-bottom: 13px;
+            font-family: "poping_light";
+        }
+        a:hover{
+            color: black;
+        }
         .about-entreprise{
             max-width: 30%;
         }
+        .link,.sociel-media,.contactus{
+            padding-top: 30px;
+        }
+
+    }
+
+    .app-footer{
+        display: flex;
+        p{
+            max-width: 25%;
+        }
+        .appstore-playstore{
+            img{
+                width: 200px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        p{
+            font-size:15px;
+        }
+        .appstore-playstore{
+            padding-left: 50px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        p{
+            font-size:13px;
+        }
+    }
+    @media screen and (max-width: 560px){
+        p{
+            text-align: center;
+            max-width: 100% !important;
+        }
+
+        .app-footer{
+            text-align: center;
+            display: block;
+            p{
+                padding-bottom:20px;
+            }
+            .appstore-playstore{
+                padding-left: 0px !important;
+                img{
+                    padding-bottom: 10px;
+                }
+            }
+        }
+
+        .footer-element
+        {
+            display: block;
+            .about-entreprise{
+                max-width: 100%;
+            }
+        }
+
     }
 }

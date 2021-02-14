@@ -142,7 +142,7 @@ h5 {
 
 p {
   font-family: "poping_regular";
-  font-size: 20px;
+  font-size: 17px;
 }
 
 a, button {
@@ -187,7 +187,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 22px;
+  padding: 10px;
   z-index: 100;
 }
 
@@ -205,6 +205,7 @@ header .navbar .logo {
 
 header .navbar ul {
   display: flex;
+  padding-top: 13px;
 }
 
 header .navbar ul li {
@@ -236,13 +237,13 @@ header .burger-menu-zone .burger-menu .lin-burger {
   width: 40px;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 768px) {
   header .burger-menu-zone {
     display: flex;
   }
   header .burger-menu-zone .burger-menu {
     left: 80%;
-    bottom: 3px;
+    bottom: 19px;
   }
   header .navbar ul {
     display: flex;
@@ -296,7 +297,7 @@ header .burger-menu-zone .burger-menu .lin-burger {
   cursor: pointer;
   text-align: -webkit-right;
   position: relative;
-  right: 43px;
+  right: 90px;
   bottom: -29px;
 }
 
@@ -317,18 +318,102 @@ header .burger-menu-zone .burger-menu .lin-burger {
   bottom: 15px;
 }
 
+.zone-logo {
+  max-width: 100Px;
+}
+
 footer {
   padding-top: 80px;
-  background-color: red;
+  background-color: #64dcfa;
+}
+
+footer p {
+  color: white;
+  text-align: start;
+  font-family: "poping_regular";
 }
 
 footer .footer-element {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer .footer-element h3 {
+  padding-bottom: 10px;
+  color: white;
+}
+
+footer .footer-element a, footer .footer-element li {
+  color: white;
+  margin-bottom: 13px;
+  font-family: "poping_light";
+}
+
+footer .footer-element a:hover {
+  color: black;
 }
 
 footer .footer-element .about-entreprise {
   max-width: 30%;
+}
+
+footer .footer-element .link, footer .footer-element .sociel-media, footer .footer-element .contactus {
+  padding-top: 30px;
+}
+
+footer .app-footer {
+  display: flex;
+}
+
+footer .app-footer p {
+  max-width: 25%;
+}
+
+footer .app-footer .appstore-playstore img {
+  width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer p {
+    font-size: 15px;
+  }
+  footer .appstore-playstore {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  footer p {
+    text-align: center;
+    max-width: 100% !important;
+  }
+  footer .app-footer {
+    text-align: center;
+    display: block;
+  }
+  footer .app-footer p {
+    padding-bottom: 20px;
+  }
+  footer .app-footer .appstore-playstore {
+    padding-left: 0px !important;
+  }
+  footer .app-footer .appstore-playstore img {
+    padding-bottom: 10px;
+  }
+  footer .footer-element {
+    display: block;
+  }
+  footer .footer-element .about-entreprise {
+    max-width: 100%;
+  }
 }
 
 h1 {
