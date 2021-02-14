@@ -219,6 +219,10 @@ h1 {
   }
 }
 
+.data-client {
+  padding-top: 50px;
+}
+
 .data-client h2 {
   color: black;
   padding-bottom: 20px;
@@ -254,7 +258,7 @@ h1 {
 }
 
 .reserve .card-reserve {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/background/back-reserve2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/background/location-de-voiture-senegal-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
