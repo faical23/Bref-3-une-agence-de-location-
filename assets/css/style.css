@@ -317,6 +317,20 @@ header .burger-menu-zone .burger-menu .lin-burger {
   bottom: 15px;
 }
 
+footer {
+  padding-top: 80px;
+  background-color: red;
+}
+
+footer .footer-element {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-element .about-entreprise {
+  max-width: 30%;
+}
+
 h1 {
   color: red;
 }

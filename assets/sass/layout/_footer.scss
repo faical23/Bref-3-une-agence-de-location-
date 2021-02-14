@@ -1,0 +1,12 @@
+footer{
+    padding-top: 80px;
+    background-color: red;
+    .footer-element
+    {
+        display: flex;
+        justify-content: space-between;
+        .about-entreprise{
+            max-width: 30%;
+        }
+    }
+}
