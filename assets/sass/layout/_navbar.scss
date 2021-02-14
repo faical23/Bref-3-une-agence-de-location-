@@ -1,13 +1,31 @@
+/* buttton resereve navbar */
+.reserve-btn-header{
+    color: white;
+    padding: 3px 25px;
+    border-radius: 50px;
+    background-color: $primary_color_1;
+    &:hover{
+        background-color: white;
+        color: $primary_color_1;
+    }
+}
+
 header{
     position: fixed;
     width:100%;
     background-color: rgba(0,0,0,0.5);
     padding:22px;
     z-index: 100;
+
     .navbar{
         display: flex;
         justify-content: space-between;
         padding: 0px 10% ;
+        .logo{
+            color: white;
+            font-size: 20px;
+            font-family: "poping_Bold";
+        }
         ul{
             display: flex;
             li{
@@ -17,9 +35,10 @@ header{
                 font-weight: bold;
                 font-style: normal;
                 &:hover{
-                    color: black;
+                    color: $primary_color_1;
                 }
             }
+
         }
     }
     .burger-menu-zone{
@@ -41,8 +60,8 @@ header{
         .burger-menu-zone{
             display: flex;
             .burger-menu{
-                left: 90%;
-                bottom: 0px;
+                left: 80%;
+                bottom: 3px;
             }
         }
             .navbar{
@@ -54,17 +73,21 @@ header{
     }
 }
 
+    #nav-bar-mobile_on{
+        //display: flex;
+        position: relative;
+        z-index: 200;
+        left: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+    #nav-bar-mobile_off{
+        //display: none;
+        position: relative;
+        z-index: 200;
+        left: 2000px;
+        transition: all 0.6s ease-in-out;
+    }
 
-#nav-bar-mobile_on{
-    display: flex;
-    position: relative;
-    z-index: 200;
-}
-#nav-bar-mobile_off{
-    display: none;
-    position: relative;
-    z-index: 200;
-}
 
 .menu-mobile{
         position: fixed;
@@ -76,24 +99,27 @@ header{
         background-size: cover;
         height: 100vh;
 
+        .first-link-mobile{
+            margin-top: 100px;
+        }
         li{
-            font-family: "poping_Bold";
             z-index: 300;
             font-size: 30px;
-            padding-bottom: 50px;
+            padding-bottom: 60px;
             color: white;
             font-weight: bold;
             font-style: normal;
             &:hover{
-                color: black;
+                color: $primary_color_1;
             }       
          }
+
          .burger-menu-mobile{
              cursor: pointer;
              text-align: -webkit-right;
              position: relative;
-             right: 32px;
-             bottom: -25px;
+             right: 43px;
+             bottom: -29px;
              .lin-burger{
                 padding: 5px 0px;
                 background-color: white;
