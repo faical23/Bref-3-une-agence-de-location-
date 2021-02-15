@@ -607,6 +607,80 @@ footer .app-footer .appstore-playstore img {
   }
 }
 
+.our-servece {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.our-servece h2 {
+  color: black;
+}
+
+.our-servece .zone_our_service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-servece .zone_our_service .card-our-service {
+  max-width: 25%;
+  border: 1px solid black;
+  padding: 50px;
+  text-align: center;
+  background-image: url(../img/background/unnamed111.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-servece .zone_our_service .card-our-service .centent-our-service {
+  background-color: white;
+  color: black;
+  padding: 12px;
+}
+
+.our-servece .zone_our_service .card-our-service .centent-our-service h3 {
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .our-servece .card-our-service {
+    padding: 25px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-servece .zone_our_service {
+    display: block;
+    text-align: -webkit-center;
+  }
+  .our-servece .card-our-service {
+    max-width: 60% !important;
+    margin-bottom: 30px;
+  }
+  .our-servece .card-our-service .centent-our-service {
+    background-color: white;
+    color: black;
+    padding: 12px;
+  }
+  .our-servece .card-our-service .centent-our-service h3 {
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .our-servece .card-our-service {
+    max-width: 60% !important;
+    margin-bottom: 30px;
+  }
+  .our-servece .card-our-service .centent-our-service h3 {
+    font-size: 14px;
+  }
+  .our-servece .card-our-service .centent-our-service p {
+    font-size: 10px;
+  }
+}
+
 .data-client {
   padding-top: 50px;
 }
