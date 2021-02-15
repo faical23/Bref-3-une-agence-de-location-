@@ -1,0 +1,35 @@
+.all-card-contact{
+    padding-top: 50px;
+    .part-card{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 48px 0px 48px 0px;
+        background-color: #f0f0f0;
+        position: relative;
+        bottom: 80px;
+        .card{
+            border: 1px solid black;
+            text-align: center;
+            width: 250px;
+            padding: 15px 0px;
+            h3{
+                padding: 7px 0px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .part-card{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            .card{
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
