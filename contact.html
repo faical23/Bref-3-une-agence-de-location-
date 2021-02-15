@@ -19,7 +19,7 @@
                     <ul>
                         <a href="index.html"><li>HOME</li></a>
                         <a href="gallery.html"><li>GALLERY</li></a>
-                        <a href="contact.html"><li>CONTACT US</li></a>
+                        <a href="contact.html" ><li class="active">CONTACT US</li></a>
                         <li><a href="reserve.html" class="reserve-btn-header">RESERVE</a></li>   
                     </ul>
                 </div>
@@ -87,16 +87,32 @@
                 <form>
                     <div class="form-content">
                         <h2><span>Contact</span> us</h2>
-                        <input type="text" placeholder="NAME">
-                        <input type="email" placeholder=Your@gmail.com>
-                        <input type="text" placeholder="Phone">
-                        <textarea placeholder="MESSAGE"></textarea>
+                        <input id="name" type="text" placeholder="NAME" value="">
+                        <input id="email" type="email" placeholder="Your@gmail.com"  value="">
+                        <input id="phone" type="text" placeholder="Phone"  value="">
+                        <textarea id="message" placeholder="MESSAGE"  value=""></textarea>
                         <div class="zone-send-button">
-                            <button class="send-button reserve-btn-header">Send</button>
+                            <a class="send-button reserve-btn-header" onclick="send_mail()">Send</a>
                         </div>
                     </div>
                 </form>
             </div>
+
+            <section id="zone_popup_contact_off">
+                <div class="popup-contact">
+                    <img src="assets/img/icons/Group 157.svg">
+                    <p>thank u for your feedback </p>
+                    <button class="done-contact-btn reserve-btn-header" onclick="done_contact()">Done</button>
+                </div>
+            </section>
+            <section id="zone_popup_contact__error_off">
+                <div class="popup-contact">
+                    <img class="error_img" src="assets/img/icons/error-icon-4.png">
+                    <p>faid missing</p>
+                    <button class="done-contact-btn reserve-btn-header" onclick="reapet_contact_error()">Repeat</button>
+                </div>
+            </section>
+
 
         </div>
     </section>
@@ -152,5 +168,7 @@
         <p>© Copyright 2020 Faical.com, All Rights Reserved.</p>
     </div>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+
 </body>
 </html>

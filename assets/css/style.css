@@ -16,6 +16,10 @@ span {
   color: crimson;
 }
 
+.active {
+  color: crimson !important;
+}
+
 article,
 aside,
 details,
@@ -209,7 +213,6 @@ header .navbar ul {
 }
 
 header .navbar ul li {
-  padding-left: 30px;
   padding-left: 30px;
   color: white;
   font-weight: bold;
@@ -891,5 +894,78 @@ h1 {
 @media screen and (max-width: 768px) {
   .centent-contact-us form h2 {
     font-size: 30px;
+  }
+}
+
+#zone_popup_contact_off {
+  display: none;
+}
+
+#zone_popup_contact_on {
+  display: flex;
+}
+
+#zone_popup_contact__error_off {
+  display: none;
+}
+
+#zone_popup_contact__error_on {
+  display: flex;
+}
+
+.popup-contact {
+  border: 1px solid black;
+  width: 400px;
+  text-align: center;
+  padding: 20px 2px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px -3px 49px 10px black;
+  position: fixed;
+  left: 35%;
+  bottom: 100px;
+}
+
+.popup-contact .done-contact-btn {
+  margin-top: 20px;
+}
+
+.popup-contact .done-contact-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.popup-contact .error_img {
+  width: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .popup-contact {
+    left: 31%;
+    bottom: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup-contact {
+    left: 22%;
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .popup-contact {
+    width: 250px;
+    padding: 10px 2px;
+    left: 18%;
+  }
+  .popup-contact img {
+    width: 83px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .popup-contact {
+    left: 6%;
   }
 }
