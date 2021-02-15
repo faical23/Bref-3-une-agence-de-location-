@@ -753,19 +753,49 @@ footer .app-footer .appstore-playstore img {
 }
 
 .why_us {
+  background-image: url(../img/véhicule/DSC8133.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: 100px;
-  background-color: crimson;
   padding: 30px 0px;
 }
 
 .why_us .centent_why_us {
   display: flex;
   justify-content: space-between;
+  padding-top: 60px;
 }
 
-.why_us .centent_why_us p {
-  padding-bottom: 20px;
+.why_us .centent_why_us .valeur {
+  display: flex;
+}
+
+.why_us .centent_why_us .valeur p {
   color: white;
+  padding-left: 15px;
+  margin: auto 0px;
+}
+
+.why_us .centent_why_us .valeur img {
+  width: 43px;
+}
+
+.card_why_us {
+  position: relative;
+  left: 35%;
+  top: 162px;
+}
+
+.card_why_us .centent_card_why_us {
+  box-shadow: 0px 1px 18px 1px black;
+  background-color: white;
+  padding: 45px 0px 10px 0px;
+  width: 20%;
+}
+
+.card_why_us .centent_card_why_us h2 {
+  color: black;
 }
 
 .data-client {
