@@ -823,3 +823,73 @@ h1 {
     margin-bottom: 20px;
   }
 }
+
+.centent-contact-us {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+
+.centent-contact-us .img-maps {
+  max-width: 45%;
+}
+
+.centent-contact-us .img-maps img {
+  height: 600px;
+}
+
+.centent-contact-us form {
+  max-width: 33%;
+  border: 1px solid black;
+  padding: 0px 20px;
+  border-radius: 20px;
+}
+
+.centent-contact-us form h2 {
+  color: black;
+}
+
+.centent-contact-us form input, .centent-contact-us form textarea {
+  margin-bottom: 25px;
+  height: 51px;
+  border-radius: 17px;
+}
+
+.centent-contact-us form textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.centent-contact-us form .zone-send-button {
+  text-align: end;
+}
+
+.centent-contact-us form .zone-send-button .send-button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .centent-contact-us {
+    display: grid;
+  }
+  .centent-contact-us .img-maps {
+    order: 1;
+    max-width: 100%;
+  }
+  .centent-contact-us .img-maps img {
+    height: 360px;
+  }
+  .centent-contact-us form {
+    max-width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .centent-contact-us form h2 {
+    font-size: 30px;
+  }
+}
