@@ -1,3 +1,109 @@
-h1{
-    color: red;
+.about_us{
+    padding-top: 50px;
+    h2{
+        color: black;
+    }
+    .about-us-zone{
+        display: flex;
+        justify-content: space-between;
+        .img-about_us{
+            width: 50%;
+            img{
+                width: 3901px;
+                position: relative;
+                left: 180px;
+                top: 30px;
+            }
+        
+        }
+
+        .about_us_content{
+            max-width: 50%;
+            h4{
+                font-size: 25px;
+                border-bottom: 5px solid $primary_color_1;
+                width: 154px;
+                padding-bottom: 8px;
+                margin-bottom: 26px;
+            }
+            p{
+                padding-bottom: 25px;
+            }
+            .valeur-card{
+                display: flex;
+                justify-content: space-between;
+                .card-valeur{
+                    text-align: center;
+                    width: 45%;
+                    padding: 20px 20px;
+                    border-radius: 25px;
+                    box-shadow: 0px 1px 18px 1px black;
+                    img{
+                        width: 60px;
+                    }
+                    h5{
+                        padding: 9px 0px ;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+
+    @media screen and (max-width: 1440px) {
+        .img-about_us{
+            img{
+                top: 70px !important;
+            }
+        
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .img-about_us{
+            img{
+                width: 3901px;
+                left: 29px !important;
+                top: 167px !important;   
+           }  
+        }
+        .card-valeur{
+            p{
+                font-size: 13px !important;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .about-us-zone{
+            display: block;
+            .about_us_content{
+                max-width: 100%;
+            }
+        }
+        .img-about_us{
+            width: 100% !important;
+            position: relative !important;
+            bottom: 200px !important; 
+            img{
+                left: 0px !important;
+            }
+
+        }
+    }
+    @media screen and (max-width: 560px) {
+        .valeur-card{
+            display: block !important;
+            .card-valeur{
+                width: 100% !important;
+                margin-bottom: 40px;
+            }
+
+        }
+    }
+
 }

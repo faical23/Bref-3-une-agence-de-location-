@@ -164,7 +164,7 @@ function show_fulltype(porcentage,type_charge)
     <h2><span>Duration </span>time</h2>
     <div class="chose_days">
     <p >days :</p>
-    <input type="number" class="jrs"  min="1" max="9000">
+    <input type="number" class="jrs" min="1" max="9000">
     </div>
     `;
     validation_button.innerHTML = ` 
