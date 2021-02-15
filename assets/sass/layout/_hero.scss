@@ -1,0 +1,43 @@
+    .hero{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top:180px;
+        padding-bottom: 50px;
+        h1{
+            color: white;
+            max-width: 80%;
+            font-size: 45px;
+        }
+        button{
+            padding: 8px 18px;
+            border-radius: 20px;
+            color: white;
+            background-color: $primary_color_1;
+            margin-top: 25px;
+            &:hover{
+                background-color: white;
+                color: $primary_color_1;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            h1 {
+                color: white;
+                max-width: 100%;
+                font-size: 45px;
+            }
+          }
+          @media screen and (max-width: 560px) {
+              padding-top: 90px;
+            h1 {
+                font-size: 22px;
+            }
+          }
+    }
+
+    .hero_contact{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/contact_back.jpg);
+    }
+    .hero_reserve{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/backreserve.png);
+    }
