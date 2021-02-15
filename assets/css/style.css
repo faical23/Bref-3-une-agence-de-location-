@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -625,7 +626,7 @@ footer .app-footer .appstore-playstore img {
 .our-servece .zone_our_service .card-our-service {
   max-width: 25%;
   border: 1px solid black;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
   background-image: url(../img/background/unnamed111.jpg);
   background-position: center;
@@ -641,6 +642,18 @@ footer .app-footer .appstore-playstore img {
 
 .our-servece .zone_our_service .card-our-service .centent-our-service h3 {
   padding-bottom: 5px;
+}
+
+.our-servece .zone_our_service .card-our-service .centent-our-service p {
+  font-size: 15px;
+}
+
+.our-servece .zone_our_service .chaufeurs {
+  background-image: url(../img/background/Formation-vtc.jpg);
+}
+
+.our-servece .zone_our_service .from_airport {
+  background-image: url(../img/véhicule/airport.jpg);
 }
 
 @media screen and (max-width: 1024px) {
@@ -679,6 +692,80 @@ footer .app-footer .appstore-playstore img {
   .our-servece .card-our-service .centent-our-service p {
     font-size: 10px;
   }
+}
+
+.more_about_us {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/véhicule/véhicle44.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 30px 0px;
+  margin-bottom: 100px;
+}
+
+.more_about_us .content_our_client .content_more_aboyt_us {
+  padding-top: 30px;
+}
+
+.more_about_us .content_our_client .content_more_aboyt_us p {
+  max-width: 60%;
+  color: white;
+  padding-top: 25px;
+}
+
+.more_about_us .content_our_client .content_more_aboyt_us h3 {
+  color: white;
+}
+
+.more_about_us .content_our_client .content_more_aboyt_us button {
+  margin-top: 30px;
+  padding: 9px 24px;
+}
+
+.text_our_place {
+  text-align: center;
+  padding: 30px;
+}
+
+.text_our_place h2 {
+  color: black;
+  padding-bottom: 20px;
+}
+
+.text_our_place p {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our_place {
+  background-image: url(../img/maps/maps-aga.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+
+.footer_home {
+  margin-top: 100px;
+}
+
+.why_us {
+  margin-top: 100px;
+  background-color: crimson;
+  padding: 30px 0px;
+}
+
+.why_us .centent_why_us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.why_us .centent_why_us p {
+  padding-bottom: 20px;
+  color: white;
 }
 
 .data-client {
