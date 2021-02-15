@@ -43,9 +43,13 @@
         padding-bottom: 20px ;
     }
     .part-information{
+
         display: flex;
         justify-content: space-around;
         text-align: center;
+        input{
+            padding: 0px 20px;
+        }
     }
     @media screen and (max-width: 560px) {
         .part-information{

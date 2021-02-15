@@ -1,5 +1,6 @@
 .about_us{
     padding-top: 50px;
+    padding-bottom: 150px;
     h2{
         color: black;
     }
@@ -79,6 +80,7 @@
         }
     }
     @media screen and (max-width: 768px) {
+        padding-bottom: 50px;
         .about-us-zone{
             display: block;
             .about_us_content{
@@ -112,27 +114,39 @@
 .our-servece{
     padding-top: 50px;
     padding-bottom: 100px;
+    .zone_see_more{
+        text-align: center;
+        margin-top: 40px;
+        button{
+            padding: 8px 32px;
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
     h2{
         color: black;
     }
     .zone_our_service
     {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         .card-our-service{
-            max-width: 25%;
+            max-width: 47%;
             border: 1px solid black;
-            padding: 30px;
-            text-align: center;
+            padding: 75px 48px;            text-align: center;
             background-image: url(../img/background/unnamed111.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             .centent-our-service{
+                box-shadow: 0px 1px 18px 1px black;
                 background-color: white;
                 color: black;
-                padding:12px;
+                padding: 18px 12px;  
+                max-width: 400px;
                 h3{
                     padding-bottom: 5px;
                 }
@@ -143,11 +157,12 @@
         }
         .chaufeurs{
             background-image: url(../img/background/Formation-vtc.jpg);
-
         }
-        .from_airport{
+        .airport{
             background-image: url(../img/véhicule/airport.jpg);
-
+        }
+        .more_offers{
+            background-image: url(../img/véhicule/locationkey.jpg);
         }
 
     }
@@ -157,6 +172,10 @@
         }
     }
     @media screen and (max-width: 768px){
+        #zone_our_service_2_on{
+            margin-top: 25px;
+            display: block;
+        }
         .zone_our_service
         {
             display: block;
@@ -197,7 +216,6 @@
 .more_about_us{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/véhicule/véhicle44.jpg);
 
-    // background-image: url(../img/véhicule/véhicle44.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -250,10 +268,13 @@
 }
 
 .why_us{
-    background-image:url(../img/véhicule/DSC8133.jpg);
+    background-image:url(../img/véhicule/location-voiture-pas-cher.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/véhicule/location-voiture-pas-cher.jpg);
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin-top: 100px;
     padding: 30px 0px;
     .centent_why_us{
@@ -273,13 +294,28 @@
         }
 
     }
+    @media screen and (max-width: 768px){
+        .centent_why_us{
+            display: block !important;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .centent_why_us{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 .card_why_us{
-    position: relative;
-    left: 35%;
-    top: 162px;
+    // position: relative;
+    // left: 35%;
+    // top: 162px;
         .centent_card_why_us{
+            position: absolute;
+            left: 40%;
+            // top: 160px;
         box-shadow: 0px 1px 18px 1px black;
         background-color: white;
         padding: 45px 0px 10px 0px;
@@ -288,4 +324,30 @@
             color:black;
         }
     }
+    @media screen and (max-width: 1024px){
+        .centent_card_why_us{
+            left: 35%;
+            width: 30%;
+        }
+    }
+    @media screen and (max-width: 560px){
+        bottom: 180px;
+        .centent_card_why_us{
+            left: 25%;
+            width: 50%;
+            h2{
+                font-size: 27px;
+            }
+        }
+    }
+
+}
+
+#zone_our_service_2_off{
+    margin-top: 25px;
+    display: none;
+}
+#zone_our_service_2_on{
+    margin-top: 25px;
+    display: flex;
 }

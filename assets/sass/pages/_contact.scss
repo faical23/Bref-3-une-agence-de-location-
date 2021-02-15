@@ -52,6 +52,9 @@
         h2{
             color: black;
         }
+        input{
+            padding: 0% 8%;
+        }
         input,textarea{
             margin-bottom: 25px;
             height: 51px;
@@ -60,6 +63,7 @@
         textarea{
             width: 100%;
             height: 200px;
+            padding: 3% 8% !important;
         }
         .zone-send-button{
             text-align: end;
