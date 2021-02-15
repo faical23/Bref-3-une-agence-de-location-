@@ -1,7 +1,5 @@
     .hero{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
         padding-top:180px;
         padding-bottom: 50px;
         h1{
@@ -37,7 +35,13 @@
 
     .hero_contact{
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/contact_back.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .hero_reserve{
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/backreserve.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
