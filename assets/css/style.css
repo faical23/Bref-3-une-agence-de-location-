@@ -1446,11 +1446,10 @@ footer .app-footer .appstore-playstore img {
 }
 
 .our_véhcile .gallery {
-  max-width: 70%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(13, 5vw);
-  grid-gap: 15px;
+  grid-gap: 5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1490,42 +1489,42 @@ footer .app-footer .appstore-playstore img {
   grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 1;
-  grid-row-end: 7;
+  grid-row-end: 8;
 }
 
 .our_véhcile .gallery .item4 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
-  grid-row-end: 10;
+  grid-row-end: 11;
 }
 
 .our_véhcile .gallery .item5 {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 4;
-  grid-row-end: 7;
+  grid-row-end: 8;
 }
 
 .our_véhcile .gallery .item6 {
   grid-column-start: 3;
   grid-column-end: 7;
-  grid-row-start: 7;
-  grid-row-end: 10;
+  grid-row-start: 8;
+  grid-row-end: 11;
 }
 
 .our_véhcile .gallery .item7 {
   grid-column-start: 1;
   grid-column-end: 5;
-  grid-row-start: 10;
-  grid-row-end: 13;
+  grid-row-start: 11;
+  grid-row-end: 14;
 }
 
 .our_véhcile .gallery .item8 {
   grid-column-start: 5;
   grid-column-end: 7;
-  grid-row-start: 10;
-  grid-row-end: 13;
+  grid-row-start: 11;
+  grid-row-end: 14;
 }
 
 .our_véhcile .gellery_text {
@@ -1596,13 +1595,19 @@ footer .app-footer .appstore-playstore img {
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 11;
-    grid-row-end: 15;
+    grid-row-end: 18;
   }
 }
 
 @media screen and (max-width: 560px) {
+  .our_véhcile .gallery_pad {
+    padding: 2% 3%;
+  }
   .our_véhcile .gallery {
-    grid-template-rows: repeat(25, 5vw);
+    grid-template-rows: repeat(40, 5vw);
+  }
+  .our_véhcile .gallery img {
+    height: auto;
   }
   .our_véhcile .gallery .gallery_item:hover .gellery_text {
     display: none;
@@ -1619,22 +1624,30 @@ footer .app-footer .appstore-playstore img {
   }
   .our_véhcile .gallery .item2 {
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 9;
   }
   .our_véhcile .gallery .item5 {
-    grid-row-start: 5;
-    grid-row-end: 10;
+    grid-row-start: 9;
+    grid-row-end: 18;
   }
   .our_véhcile .gallery .item6 {
-    grid-row-start: 10;
-    grid-row-end: 15;
+    grid-row-start: 18;
+    grid-row-end: 26;
   }
   .our_véhcile .gallery .item7 {
-    grid-row-start: 15;
-    grid-row-end: 20;
+    grid-row-start: 26;
+    grid-row-end: 34;
   }
   .our_véhcile .gallery .item8 {
-    grid-row-start: 20;
-    grid-row-end: 25;
+    grid-row-start: 34;
+    grid-row-end: 41;
   }
+}
+
+.inspirations {
+  padding-top: 100px;
+}
+
+.inspirations h2 {
+  color: black;
 }
