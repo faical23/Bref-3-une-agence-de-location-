@@ -32,22 +32,23 @@
             }
           }
     }
-
-    .hero_contact{
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/contact_back.jpg);
+    .hero_contact,.hero_gallery,.hero_home,.hero_reserve{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .hero_contact{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/contact_back.jpg);
+    }
     .hero_reserve{
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/backreserve.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     .hero_home{
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/background/home_back.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .hero_gallery{
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/background/gallery_back.jpg);
     }

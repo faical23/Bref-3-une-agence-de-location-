@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GALLERY</title>
 </head>
 <body>
-    
+
+        <header >
+            <div class="pr-pl">
+                <div class="navbar">
+                    <div class="zone-logo">
+                        <div class="logo"><img src="assets/img/logo/logo.png"></div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <a href="index.html"><li>HOME</li></a>
+                            <a href="gallery.html"><li class="active">GALLERY</li></a>
+                            <a href="contact.html"><li>CONTACT US</li></a>
+                            <li><a href="reserve.html" class="reserve-btn-header">RESERVE</a></li>   
+                        </ul>
+                    </div>
+                </div>
+                <div class="burger-menu-zone">
+                    <div class="burger-menu" onclick="bruger_clicked()">
+                        <div class="lin-burger lin-1"></div>
+                        <div class="lin-burger lin-2"></div>
+                        <div class="lin-burger lin-3"></div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div id="nav-bar-mobile_off">
+            <div class="menu-mobile">
+                <ul>
+                    <div class="burger-menu-mobile"  onclick="bruger_removed()">
+                        <div class="lin-burger lin-1"></div>
+                        <div class="lin-burger lin-2"></div>
+                    </div>
+                    <a href="index.html"><li class="first-link-mobile">HOME</li></a>
+                    <a href="gallery.html"><li>GALLERY</li></a>
+                    <a href="contact.html"><li>CONTACT US</li></a>
+                    <li><a href="reserve.html"  class="reserve-btn-header">RESERVE</a></li>
+                </ul>
+            </div>
+        </div>
+        <section class="hero hero_gallery">
+            <div class="pr-pl">
+                <h1>You can find ,her all about our véhcile, and inspirations for our costumers</h1>
+                <button class="reserve-btn">Reserve now!</button>
+            </div>
+        </section>
+
+
+
+
+        <script src="assets/js/main.js"></script>
+
 </body>
 </html>
