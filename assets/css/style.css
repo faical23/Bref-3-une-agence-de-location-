@@ -154,6 +154,13 @@ a, button {
   font-family: "poping_light";
 }
 
+@media screen and (max-width: 560px) {
+  p {
+    font-size: 14px;
+    max-width: 100% !important;
+  }
+}
+
 input {
   border: 1px solid black;
   border-radius: 10px;
@@ -695,10 +702,12 @@ footer .app-footer .appstore-playstore img {
     text-align: -webkit-center;
   }
   .our-servece .card-our-service {
-    max-width: 60% !important;
+    max-width: 100% !important;
     margin-bottom: 30px;
   }
   .our-servece .card-our-service .centent-our-service {
+    margin-left: auto !important;
+    margin-right: auto !important;
     background-color: white;
     color: black;
     padding: 12px;
@@ -863,6 +872,81 @@ footer .app-footer .appstore-playstore img {
 #zone_our_service_2_on {
   margin-top: 25px;
   display: flex;
+}
+
+.maps {
+  text-align: center;
+}
+
+.maps iframe {
+  max-width: 100%;
+}
+
+.zone_moto .mote_text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zone_moto .mote_text .img-moto {
+  width: 60%;
+  position: relative;
+  right: 250px;
+  bottom: 100px;
+}
+
+.zone_moto .mote_text .centent-zone_moto {
+  width: 40%;
+  padding: 80px 50px;
+  border: 1px solid black;
+  height: 350px;
+  box-shadow: black 0px 1px 18px 1px;
+}
+
+.zone_moto .mote_text .centent-zone_moto h3 {
+  font-size: 25px;
+  border-bottom: 5px solid crimson;
+  width: 150px;
+  padding-bottom: 8px;
+  margin-bottom: 26px;
+}
+
+@media screen and (max-width: 1024px) {
+  .zone_moto .centent-zone_moto {
+    padding: 31px 50px !important;
+    height: 295px !important;
+  }
+  .zone_moto .img-moto {
+    right: 150px !important;
+    bottom: 60px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .zone_moto .mote_text {
+    display: block;
+  }
+  .zone_moto .centent-zone_moto {
+    width: 100% !important;
+    margin-bottom: 50px;
+    padding: 50px !important;
+  }
+  .zone_moto .img-moto {
+    width: 100% !important;
+    position: static !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .zone_moto p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .our-servece .card-our-service {
+    max-width: 100% !important;
+    margin-bottom: 30px;
+  }
 }
 
 .data-client {

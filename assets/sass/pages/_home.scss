@@ -182,10 +182,13 @@
             text-align: -webkit-center;
         }
         .card-our-service{
-            max-width: 60% !important;
+            max-width: 100% !important;
             margin-bottom: 30px;
 
+
             .centent-our-service{
+                margin-left: auto !important;
+                margin-right: auto !important;
                 background-color: white;
                 color: black;
                 padding:12px;
@@ -241,6 +244,7 @@
        }
 
    } 
+
 }
 .text_our_place{
     text-align: center;
@@ -350,4 +354,74 @@
 #zone_our_service_2_on{
     margin-top: 25px;
     display: flex;
+}
+.maps{
+    text-align: center;
+    iframe {
+        max-width: 100%;
+    }
+}
+.zone_moto
+{
+    .mote_text{
+        display: flex;
+        justify-content: space-between;
+        .img-moto{
+            width: 60%;
+            position: relative;
+            right: 250px;
+            bottom: 100px;
+        }
+        .centent-zone_moto{
+            width: 40%;
+            padding: 80px 50px;
+            border: 1px solid black;
+            height: 350px;
+            box-shadow: black 0px 1px 18px 1px;
+
+            h3{
+                font-size: 25px;
+                border-bottom: 5px solid crimson;
+                width: 150px;
+                padding-bottom: 8px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px){
+        .centent-zone_moto{
+            padding: 31px 50px !important;
+            height: 295px !important;
+        }
+        .img-moto{
+            right: 150px !important;
+            bottom: 60px !important;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .mote_text{
+            display: block;
+        }
+        .centent-zone_moto{
+            width: 100% !important;
+            margin-bottom: 50px;
+            padding:50px !important;
+        }
+        .img-moto{
+            width: 100% !important;
+            position: static !important;
+        }
+    }
+    @media screen and (max-width: 768px){
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .our-servece .card-our-service {
+        max-width: 100% !important;
+        margin-bottom: 30px;
+    }
 }
