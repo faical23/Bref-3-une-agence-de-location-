@@ -9,49 +9,45 @@
 </head>
 <body>
 
-        <header >
-            <div class="pr-pl">
-                <div class="navbar">
-                    <div class="zone-logo">
-                        <div class="logo"><img src="assets/img/logo/logo.png"></div>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <a href="index.html"><li>HOME</li></a>
-                            <a href="gallery.html"><li class="active">GALLERY</li></a>
-                            <a href="contact.html"><li>CONTACT US</li></a>
-                            <li><a href="reserve.html" class="reserve-btn-header">RESERVE</a></li>   
-                        </ul>
-                    </div>
+    <header >
+        <div class="pr-pl">
+            <div class="navbar">
+                <div class="zone-logo">
+                    <div class="logo"><img src="assets/img/logo/logo.png"></div>
                 </div>
-                <div class="burger-menu-zone">
-                    <div class="burger-menu" onclick="bruger_clicked()">
-                        <div class="lin-burger lin-1"></div>
-                        <div class="lin-burger lin-2"></div>
-                        <div class="lin-burger lin-3"></div>
-                    </div>
+                <div class="menu">
+                    <ul>
+                        <a href="index.html"><li>HOME</li></a>
+                        <a href="gallery.html"><li  class="active" >GALLERY</li></a>
+                        <a href="contact.html" ><li>CONTACT US</li></a>
+                        <li><a href="reserve.html" class="reserve-btn-header">RESERVE</a></li>   
+                    </ul>
                 </div>
             </div>
-
-        </header>
-        <div id="nav-bar-mobile_off">
-            <div class="menu-mobile">
-                <ul>
-                    <div class="burger-menu-mobile"  onclick="bruger_removed()">
-                        <div class="lin-burger lin-1"></div>
-                        <div class="lin-burger lin-2"></div>
-                    </div>
-                    <a href="index.html"><li class="first-link-mobile">HOME</li></a>
-                    <a href="gallery.html"><li>GALLERY</li></a>
-                    <a href="contact.html"><li>CONTACT US</li></a>
-                    <li><a href="reserve.html"  class="reserve-btn-header">RESERVE</a></li>
-                </ul>
+            <div class="burger-menu-zone">
+                <div class="burger-menu" id="burger-menu-on" onclick="bruger_clicked()">
+                    <div class="lin-burger lin-1" id="line1_off"></div>
+                    <div class="lin-burger lin-2" id="line2_off"></div>
+                    <div class="lin-burger lin-3" id="line3_off"></div>
+                </div>
             </div>
         </div>
+
+    </header>
+    <div id="nav-bar-mobile_off">
+        <div class="menu-mobile">
+            <ul>
+                <a href="index.html"><li class="first-link-mobile">HOME</li></a>
+                <a href="gallery.html"><li>GALLERY</li></a>
+                <a href="contact.html"><li>CONTACT US</li></a>
+                <li><a href="reserve.html"  class="reserve-btn-header">RESERVE</a></li>
+            </ul>
+        </div>
+    </div>
         <section class="hero hero_gallery">
             <div class="pr-pl">
                 <h1>You can find ,her all about our véhcile, and inspirations for our costumers</h1>
-                <button class="reserve-btn">Reserve now!</button>
+                <a href="reserve.html"><button class="reserve-btn">Reserve now!</button></a>
             </div>
         </section>
         <section class="our_véhcile">
@@ -122,10 +118,10 @@
                     <div class="link">
                         <h3>Link</h3>
                         <ul>
-                            <a href="#">HOME<li></li></a>
-                            <a href="#">GALLERY<li></li></a>
-                            <a href="#">CONTACT US<li></li></a>
-                            <li><a href="#" class="reserve-btn-header">RESERVE</a></li>
+                            <a href="index.html">HOME<li></li></a>
+                            <a href="gallery.html">GALLERY<li></li></a>
+                            <a href="contact.html">CONTACT US<li></li></a>
+                            <li><a href="reserve.html" class="reserve-btn-header">RESERVE</a></li>
                         </ul>
                     </div>
                     <div class="sociel-media">

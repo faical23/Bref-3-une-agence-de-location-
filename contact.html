@@ -25,10 +25,10 @@
                 </div>
             </div>
             <div class="burger-menu-zone">
-                <div class="burger-menu" onclick="bruger_clicked()">
-                    <div class="lin-burger lin-1"></div>
-                    <div class="lin-burger lin-2"></div>
-                    <div class="lin-burger lin-3"></div>
+                <div class="burger-menu" id="burger-menu-on" onclick="bruger_clicked()">
+                    <div class="lin-burger lin-1" id="line1_off"></div>
+                    <div class="lin-burger lin-2" id="line2_off"></div>
+                    <div class="lin-burger lin-3" id="line3_off"></div>
                 </div>
             </div>
         </div>
@@ -37,13 +37,9 @@
     <div id="nav-bar-mobile_off">
         <div class="menu-mobile">
             <ul>
-                <div class="burger-menu-mobile"  onclick="bruger_removed()">
-                    <div class="lin-burger lin-1"></div>
-                    <div class="lin-burger lin-2"></div>
-                </div>
                 <a href="index.html"><li class="first-link-mobile">HOME</li></a>
                 <a href="gallery.html"><li>GALLERY</li></a>
-                <a href="contact.html"><li>CONTACT US</li></a>
+                <a href="contact.html"><li  class="active" >CONTACT US</li></a>
                 <li><a href="reserve.html"  class="reserve-btn-header">RESERVE</a></li>
             </ul>
         </div>
@@ -52,8 +48,8 @@
         <div class="pr-pl">
             <h1>feel free to contact us , we will help u , and give u all
                  informations you want. be happy with us</h1>
-            <button class="reserve-btn">Reserve now!</button>
-        </div>
+                 <a href="reserve.html"><button class="reserve-btn">Reserve now!</button></a>
+                </div>
     </section>
 
     <section class="all-card-contact">
@@ -116,7 +112,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer_home">
         <div class="pr-pl">
             <div class="footer-element">
                 <div class="about-entreprise">
@@ -128,10 +124,10 @@
                 <div class="link">
                     <h3>Link</h3>
                     <ul>
-                        <a href="#">HOME<li></li></a>
-                        <a href="#">GALLERY<li></li></a>
-                        <a href="#">CONTACT US<li></li></a>
-                        <li><a href="#" class="reserve-btn-header">RESERVE</a></li>
+                        <a href="index.html">HOME<li></li></a>
+                        <a href="gallery.html">GALLERY<li></li></a>
+                        <a href="contact.html">CONTACT US<li></li></a>
+                        <li><a href="reserve.html" class="reserve-btn-header">RESERVE</a></li>
                     </ul>
                 </div>
                 <div class="sociel-media">
