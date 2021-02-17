@@ -1600,6 +1600,12 @@ footer .app-footer .appstore-playstore img {
 }
 
 @media screen and (max-width: 768px) {
+  .our_véhcile .video_inspirations {
+    display: block !important;
+  }
+  .our_véhcile .video_inspirations video {
+    width: 100%;
+  }
   .our_véhcile .gallery {
     grid-template-rows: repeat(20, 5vw);
   }
@@ -1696,4 +1702,14 @@ footer .app-footer .appstore-playstore img {
 
 .inspirations .video_inspirations video {
   width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .inspirations .video_inspirations {
+    display: block;
+  }
+  .inspirations .video_inspirations video {
+    width: 100% !important;
+    margin-bottom: 40px;
+  }
 }

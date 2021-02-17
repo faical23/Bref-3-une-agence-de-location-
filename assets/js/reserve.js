@@ -180,6 +180,9 @@ let popup_card = document.querySelector(".popup_card");
 function accept_card()
 {
     zone_popup.id="zone_popup_off";
+
+    let check = 1
+
 }
 
 
@@ -207,6 +210,9 @@ function validation()
     `
     }
     else if(get_jrs < 0 ){
+        var btn_valide = document.querySelector(".popop_btn accept_tecket");
+        btn_valide.disabled = true;
+
         popup_card.innerHTML =
         `
         <p>u Have some error in days please check it</p>

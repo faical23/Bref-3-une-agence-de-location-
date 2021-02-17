@@ -109,6 +109,12 @@
           }
       }
       @media screen and (max-width: 768px){
+        .video_inspirations{
+            display: block !important;
+            video{
+                width: 100%;
+            }
+          }
         .gallery{
             grid-template-rows: repeat(20, 5vw);
         .item1{
@@ -208,5 +214,14 @@
         video{
             width: 40%;
         }
+    }
+    @media screen and (max-width: 768px){
+        .video_inspirations{
+            display: block ;
+            video{
+                width: 100% !important;
+                margin-bottom: 40px;
+            }
+          }
     }
 }
