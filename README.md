@@ -21,3 +21,9 @@ boite à vitesse : manuelle, automatique.
 durée de réservation (en jours).
 
 Calculer et afficher l'estimation du prix selon les critères renseignés et selon la PJ envoyée
+
+#  used technology 
+- HTML5
+- CSS3
+- SCSS
+- JAVASCRIPT
