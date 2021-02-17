@@ -15,7 +15,7 @@ header{
     width:100%;
     background-color: rgba(0,0,0,0.5);
     padding:10px;
-    z-index: 100;
+    z-index: 300;
 
     .navbar{
         display: flex;
@@ -45,13 +45,14 @@ header{
         cursor: pointer;
         display: none;
         position: relative;
+        top: 17px;
         .burger-menu{
             position: absolute;
             .lin-burger{
-                padding: 3px 0px;
+                padding: 5px 0px;
                 background-color: white;
-                margin-top: 3px;
-                width: 40px;
+                width: 55px;
+                margin-bottom: 6px;
             }
         }
     }
@@ -59,6 +60,7 @@ header{
     @media screen and (max-width: 768px) {
         .burger-menu-zone{
             display: flex;
+            z-index: 200;
             .burger-menu{
                 left: 80%;
                 bottom: 19px;
@@ -74,31 +76,27 @@ header{
 }
 
     #nav-bar-mobile_on{
-        //display: flex;
         position: relative;
-        z-index: 200;
-        left: 0px;
+        z-index: 100;
+        bottom: 0px;
         transition: all 0.5s ease-in-out;
     }
     #nav-bar-mobile_off{
-        //display: none;
         position: relative;
-        z-index: 200;
-        left: 2000px;
+        bottom: 1000px;
         transition: all 0.6s ease-in-out;
     }
 
 
 .menu-mobile{
+
+    background-color: white;
         position: fixed;
         width: 100%;
         text-align: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/background/backreserve.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
-
         .first-link-mobile{
             margin-top: 100px;
         }
@@ -106,7 +104,7 @@ header{
             z-index: 300;
             font-size: 30px;
             padding-bottom: 60px;
-            color: white;
+            color: black;
             font-weight: bold;
             font-style: normal;
             &:hover{
@@ -114,29 +112,57 @@ header{
             }       
          }
 
-         .burger-menu-mobile{
-             cursor: pointer;
-             text-align: -webkit-right;
-             position: relative;
-             right: 90px;
-             bottom: -29px;
-             .lin-burger{
-                padding: 5px 0px;
-                background-color: white;
-                margin-top: 5px;
-                width: 40px;
-             }
-             .lin-1{
-                transform: rotate(50deg);
-             }
-             .lin-2{
-                transform: rotate(-50deg);
-                position: relative;
-                bottom: 15px;
-             }
-         }
-    }
+        }
 
     .zone-logo{
         max-width: 100Px;
     }
+
+    .lin-burger{
+        position: static;
+    }
+
+
+    #burger-menu-off{
+        bottom: 32px !important;
+    }
+    #burger-menu-on{
+        bottom: 19px ;
+    }
+#line1_on,#line3_on
+{
+    transition: 0.5s 0.5s;
+    bottom: 0px;
+    position: absolute;
+}
+#line1_on{
+    transform: rotate(50deg);
+}
+#line3_on{
+    transform: rotate(-410deg);
+}
+#line2_on{
+    opacity: 0;
+    transition: 0.5s 0.5s;
+}
+
+@media screen and (max-width: 560px){
+    #burger-menu-on {
+        bottom: 24px;
+    }
+    header .burger-menu-zone .burger-menu .lin-burger {
+        padding: 4px 0px;
+        background-color: white;
+        width: 48px;
+        margin-bottom: 5px;
+    }
+    #burger-menu-off{
+        bottom: 38px !important;
+    }
+}
+#header-zone-on{
+    background-color: black;
+}
+#header-zone-off{
+    background-color: rgba(0,0,0,0.5);
+}
