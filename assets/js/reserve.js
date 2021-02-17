@@ -196,12 +196,21 @@ function validation()
     // price/jrs : ${get_jrs}
     // montant total : ${montant_total}$`);
     zone_popup.id="zone_popup_on";
-    if(reserve_name == "" || reserve_email=="" || reserve_cin=="" || !(reserve_email.match(validation_email)))
+    if(reserve_name == "" || reserve_email=="" || reserve_cin==""|| !(reserve_email.match(validation_email)))
     {
         popup_card.innerHTML =
         `
         <p>Sorry u forgot some information</p>
         <img class="gift-img gift-img-sorry" src="assets/img/gift/sorrygift2.gif">
+        <br/>
+        <a href=""><button class="popop_btn accept_tecket"  onclick="accept_card()">Reapet</button></a>
+    `
+    }
+    else if(get_jrs < 0 ){
+        popup_card.innerHTML =
+        `
+        <p>u Have some error in days please check it</p>
+        <img class="error_img_reserve" src="assets/img/icons/error-icon-4.png">
         <br/>
         <a href=""><button class="popop_btn accept_tecket"  onclick="accept_card()">Reapet</button></a>
     `

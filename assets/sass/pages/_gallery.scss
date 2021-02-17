@@ -198,8 +198,15 @@
 }
 
 .inspirations{
-    padding-top: 100px;
+    padding: 100px 0px;
     h2{
         color: black;
+    }
+    .video_inspirations{
+        display: flex;
+        justify-content: space-evenly;
+        video{
+            width: 40%;
+        }
     }
 }

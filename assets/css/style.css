@@ -1250,8 +1250,16 @@ footer .app-footer .appstore-playstore img {
   }
 }
 
+.error_img_reserve {
+  max-width: 20%;
+}
+
 .all-card-contact {
   padding-top: 50px;
+}
+
+.all-card-contact img {
+  width: 60px;
 }
 
 .all-card-contact .part-card {
@@ -1645,9 +1653,18 @@ footer .app-footer .appstore-playstore img {
 }
 
 .inspirations {
-  padding-top: 100px;
+  padding: 100px 0px;
 }
 
 .inspirations h2 {
   color: black;
+}
+
+.inspirations .video_inspirations {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inspirations .video_inspirations video {
+  width: 40%;
 }
