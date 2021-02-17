@@ -27,7 +27,8 @@ function bruger_clicked()
         burger_line_2.id="line2_off";
         burger_line_3.id="line3_off";
         burger_menu.id="burger-menu-on";
-        header.id="header-zone-off";
+        header.id="header-zone-on";
+
         navbar_mobile_off.id="nav-bar-mobile_off";
         navbar_work = true;
     }
