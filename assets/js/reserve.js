@@ -210,9 +210,6 @@ function validation()
     `
     }
     else if(get_jrs < 0 ){
-        var btn_valide = document.querySelector(".popop_btn accept_tecket");
-        btn_valide.disabled = true;
-
         popup_card.innerHTML =
         `
         <p>u Have some error in days please check it</p>
