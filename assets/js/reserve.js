@@ -189,18 +189,29 @@ function accept_card()
 function validation()
 {
     let reserve_name = document.querySelector("#reserve-name").value; /* get reserve-name from html  */
+    let reserve_name_border = document.querySelector(".reserve-name"); /* get reserve-name from html  */
     let reserve_email = document.querySelector("#reserve-email").value; /* get reserve-name from html  */
+    let reserve_email_border = document.querySelector(".reserve-email"); /* get reserve-name from html  */
     let reserve_cin = document.querySelector("#reserve-cin").value; /* get reserve-name from html  */
+    let reserve_cin_border = document.querySelector(".reserve-cin"); /* get reserve-name from html  */
     let get_jrs = document.querySelector(".jrs").value; /* get number jrs */
     montant_total = (x+x*y+x*h)*get_jrs;
-    // alert(` name : ${p}
-    // type : ${get_type_charge}
-    // price : ${x}
-    // price/jrs : ${get_jrs}
-    // montant total : ${montant_total}$`);
     zone_popup.id="zone_popup_on";
-    if(reserve_name == "" || reserve_email=="" || reserve_cin==""|| !(reserve_email.match(validation_email)))
+    if(reserve_name == "" || reserve_email =="" || reserve_cin==""|| !(reserve_email.match(validation_email)))
     {
+        if(reserve_name == "")
+        {
+            reserve_name_border.id="error_input";
+        }
+        if(reserve_email == "")
+        {
+            reserve_email_border.id="error_input";
+        }
+        if(reserve_cin == "")
+        {
+            reserve_cin_border.id="error_input";
+        }
+        
         popup_card.innerHTML =
         `
         <p>Sorry u forgot some information</p>
@@ -210,6 +221,7 @@ function validation()
     `
     }
     else if(get_jrs < 0 ){
+        reserve_name.id="error_input";
         popup_card.innerHTML =
         `
         <p>u Have some error in days please check it</p>
