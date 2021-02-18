@@ -1,0 +1,198 @@
+.slider_card_gallery{
+    padding-top: 50px;
+    h2{
+        color: black;
+    }
+    .zone_slider{
+        padding: 37px 0px;
+        position: relative;
+        margin-bottom: 410px;
+        transform: translate(15%, 0%);
+        .card_gallery{
+            background-color: cornflowerblue;
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 30px;
+            padding:40px 0px ;
+            .img-card-gallery{
+                width: 48%;
+                img{
+                    margin-top: 50px;
+                }
+            }
+            .centent_card_gallery{
+                max-width: 35%;
+                padding: 10px 25px;
+                height: 100%;
+                margin-top: 30px;
+                box-shadow: 0px 1px 18px 1px black;
+                background-color: white;
+                .titre_card_gallery{
+                    border-bottom: 3px solid $primary_color_1;
+                    width: 130px;
+                    padding-bottom: 5px;
+                }
+                p{
+                    padding: 30px 0px;
+                }
+    
+                .zone_btn_card_gallery{
+                    padding: 20px 0px;
+                    .btn_card_gallery{
+                        padding: 7px 12px;
+                        &:hover{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .card_2{
+            background-color: #ffffde;
+            .titre_card_gallery{
+                max-width: 70px;
+            }
+        }
+        .card_1{
+            background-color: #d9d9d9;
+            .titre_card_gallery{
+                max-width: 105px;
+            }
+        }
+        .card_3{
+            background-color: $primary_color_1;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .zone_slider .card_gallery .centent_card_gallery
+        {
+            max-width: 40%;
+            p {
+                padding: 10px 0px;
+            }
+        } 
+ }
+ @media screen and (max-width: 1024px) {
+    .zone_slider{
+        transform: translate(12%, 0%);
+        .card_gallery{
+            max-width: 75%;
+.centent_card_gallery
+    {
+        max-width: 43%;
+        p {
+            padding: 10px 0px;
+        }
+    } 
+}
+    }
+}
+@media screen and (max-width: 768px) {
+    .zone_slider {
+        margin-bottom: 300px;
+    
+    .card_gallery .centent_card_gallery {
+        padding: 0px 10px;
+        margin-top: 0px;
+        p{
+            font-size: 12px !important;
+        }
+    }
+}
+}
+@media screen and (max-width: 560px) {
+    .card_gallery{
+        display: block !important;
+        .img-card-gallery{
+            width: 100% !important;
+            img{
+                margin-top: 0px !important;
+            }
+        }
+        .centent_card_gallery{
+            max-width: 80% !important;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+}
+
+
+
+.btn_slide_card{
+    padding-top: 50px;
+    text-align: center;
+    button{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "poping_Bold";
+        padding:8px 19px;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+    .right_slide {
+        margin-right: 10px;
+    }
+    .left_slide{
+        margin-left: 10px;
+    }
+    @media screen and (max-width: 560px) {
+        padding-top: 220px;
+
+    }
+}
+
+.card_gallery{
+    position: absolute;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+                0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.6s;
+}
+#midle{
+    left: 0%;
+    z-index: 2;
+    transform: translateX(0rem) scale(1.06);
+}
+#left{
+    left: 10%;
+    z-index: 1;
+}
+#right{
+    left: -10%;
+    z-index: 0;
+}
+
+
+.inspirations{
+    padding: 100px 0px;
+    h2{
+        color: black;
+    }
+    .video_inspirations{
+        display: flex;
+        justify-content: space-evenly;
+        video{
+            width: 40%;
+            border-radius: 30px;
+            border: 4px solid black;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+            0 3px 6px rgba(0,0,0,0.23);
+        }
+    }
+    @media screen and (max-width: 768px){
+        .video_inspirations{
+            display: block ;
+            video{
+                width: 100% !important;
+                margin-bottom: 40px;
+            }
+          }
+    }
+}
