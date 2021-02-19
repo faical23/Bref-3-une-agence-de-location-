@@ -148,16 +148,16 @@ header{
 
 @media screen and (max-width: 560px){
     #burger-menu-on {
-        bottom: 24px;
+        bottom: 30px !important;
     }
     header .burger-menu-zone .burger-menu .lin-burger {
-        padding: 4px 0px;
+        padding: 2.5px 0px !important;
         background-color: white;
-        width: 48px;
+        width: 35px !important;
         margin-bottom: 5px;
     }
     #burger-menu-off{
-        bottom: 38px !important;
+        bottom: 39px !important;
     }
 }
 #header-zone-on{

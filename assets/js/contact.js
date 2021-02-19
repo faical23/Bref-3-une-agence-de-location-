@@ -17,7 +17,8 @@ function send_mail()
         zone_popup_contact__error_off.id="zone_popup_contact__error_on";
     }
     else{
-        popup_contact.innerHTML += `
+        popup_contact.innerHTML = `
+        <img src="">
         <p>Name : <span>${name}</span> <p>
         <p>Email :  <span>${email}</span> <p>
         <p>Subject : <span>${subject}</span>  <p>
